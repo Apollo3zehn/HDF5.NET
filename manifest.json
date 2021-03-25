@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5AttributableObject.html",
-          "hash": "W7rxs7jy/cK2gBy8Sb2h3g=="
+          "hash": "jpWJ767EZsfQ4pHqXgsg6A=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5CommitedDatatype.html",
-          "hash": "bCSPs9LzwfUNL3UmAQw7Yw=="
+          "hash": "iLSq/5BeW0ECDyPuf9OlEg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5Dataset.html",
-          "hash": "dkbup3hoBy35pxKziPpaTA=="
+          "hash": "rMzVIHHVbAi8XO6SxqqgVw=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5File.html",
-          "hash": "l5bnCXTn4+33ubugBMuz1A=="
+          "hash": "Q4A+hTsnAFxmxHUYOv09yA=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5Group.html",
-          "hash": "mVzxBqegs3FVZ/g0ZboVeg=="
+          "hash": "cnoWTr78zRfLaM/om98Q6g=="
         }
       },
       "is_incremental": false,
@@ -281,23 +281,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5NamedReference.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HDF5.NET.H5NamedReference.html",
-          "hash": "T9Ca5oSDC7x/jJ9jmdpWYQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/HDF5.NET.H5Object.yml",
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5Object.html",
-          "hash": "dmiUisO3dFS/s5BcX9eJQg=="
+          "hash": "9TxQ/eDpXlzG4pWwChRAlg=="
         }
       },
       "is_incremental": false,
@@ -329,23 +317,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5SymbolicLink.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HDF5.NET.H5SymbolicLink.html",
-          "hash": "4WJnutar11TgbhVPAG/GyA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/HDF5.NET.H5UnresolvedLink.yml",
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.H5UnresolvedLink.html",
-          "hash": "ECbOY/gV3DCpIWCkMvb23g=="
+          "hash": "QsLpqqiV9xW2U1Gc59p2Eg=="
         }
       },
       "is_incremental": false,
@@ -405,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HDF5.NET.html",
-          "hash": "CuTHiqqK/KVR9PWJQqSWhQ=="
+          "hash": "2AXkoUMmHktJ/l79rjvMRA=="
         }
       },
       "is_incremental": false,
@@ -417,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8p4E/MBuc5o+mytTwvFMwg=="
+          "hash": "NIytPsa8es9+418/c7bCCQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +477,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 34,
+          "total_file_count": 32,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

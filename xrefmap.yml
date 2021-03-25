@@ -1028,25 +1028,6 @@ references:
   isSpec: "True"
   fullName: HDF5.NET.H5NameAttribute.Name
   nameWithType: H5NameAttribute.Name
-- uid: HDF5.NET.H5NamedReference
-  name: H5NamedReference
-  href: api/HDF5.NET.H5NamedReference.html
-  commentId: T:HDF5.NET.H5NamedReference
-  fullName: HDF5.NET.H5NamedReference
-  nameWithType: H5NamedReference
-- uid: HDF5.NET.H5NamedReference.Name
-  name: Name
-  href: api/HDF5.NET.H5NamedReference.html#HDF5_NET_H5NamedReference_Name
-  commentId: P:HDF5.NET.H5NamedReference.Name
-  fullName: HDF5.NET.H5NamedReference.Name
-  nameWithType: H5NamedReference.Name
-- uid: HDF5.NET.H5NamedReference.Name*
-  name: Name
-  href: api/HDF5.NET.H5NamedReference.html#HDF5_NET_H5NamedReference_Name_
-  commentId: Overload:HDF5.NET.H5NamedReference.Name
-  isSpec: "True"
-  fullName: HDF5.NET.H5NamedReference.Name
-  nameWithType: H5NamedReference.Name
 - uid: HDF5.NET.H5Object
   name: H5Object
   href: api/HDF5.NET.H5Object.html
@@ -1066,32 +1047,6 @@ references:
   isSpec: "True"
   fullName: HDF5.NET.H5Object.Name
   nameWithType: H5Object.Name
-- uid: HDF5.NET.H5Object.Reference
-  name: Reference
-  href: api/HDF5.NET.H5Object.html#HDF5_NET_H5Object_Reference
-  commentId: P:HDF5.NET.H5Object.Reference
-  fullName: HDF5.NET.H5Object.Reference
-  nameWithType: H5Object.Reference
-- uid: HDF5.NET.H5Object.Reference*
-  name: Reference
-  href: api/HDF5.NET.H5Object.html#HDF5_NET_H5Object_Reference_
-  commentId: Overload:HDF5.NET.H5Object.Reference
-  isSpec: "True"
-  fullName: HDF5.NET.H5Object.Reference
-  nameWithType: H5Object.Reference
-- uid: HDF5.NET.H5Object.ReferenceCount
-  name: ReferenceCount
-  href: api/HDF5.NET.H5Object.html#HDF5_NET_H5Object_ReferenceCount
-  commentId: P:HDF5.NET.H5Object.ReferenceCount
-  fullName: HDF5.NET.H5Object.ReferenceCount
-  nameWithType: H5Object.ReferenceCount
-- uid: HDF5.NET.H5Object.ReferenceCount*
-  name: ReferenceCount
-  href: api/HDF5.NET.H5Object.html#HDF5_NET_H5Object_ReferenceCount_
-  commentId: Overload:HDF5.NET.H5Object.ReferenceCount
-  isSpec: "True"
-  fullName: HDF5.NET.H5Object.ReferenceCount
-  nameWithType: H5Object.ReferenceCount
 - uid: HDF5.NET.H5ObjectReference
   name: H5ObjectReference
   href: api/HDF5.NET.H5ObjectReference.html
@@ -1104,64 +1059,6 @@ references:
   commentId: T:HDF5.NET.H5RegionReference
   fullName: HDF5.NET.H5RegionReference
   nameWithType: H5RegionReference
-- uid: HDF5.NET.H5SymbolicLink
-  name: H5SymbolicLink
-  href: api/HDF5.NET.H5SymbolicLink.html
-  commentId: T:HDF5.NET.H5SymbolicLink
-  fullName: HDF5.NET.H5SymbolicLink
-  nameWithType: H5SymbolicLink
-- uid: HDF5.NET.H5SymbolicLink.GetTarget(HDF5.NET.H5LinkAccess)
-  name: GetTarget(H5LinkAccess)
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_GetTarget_HDF5_NET_H5LinkAccess_
-  commentId: M:HDF5.NET.H5SymbolicLink.GetTarget(HDF5.NET.H5LinkAccess)
-  fullName: HDF5.NET.H5SymbolicLink.GetTarget(HDF5.NET.H5LinkAccess)
-  nameWithType: H5SymbolicLink.GetTarget(H5LinkAccess)
-- uid: HDF5.NET.H5SymbolicLink.GetTarget*
-  name: GetTarget
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_GetTarget_
-  commentId: Overload:HDF5.NET.H5SymbolicLink.GetTarget
-  isSpec: "True"
-  fullName: HDF5.NET.H5SymbolicLink.GetTarget
-  nameWithType: H5SymbolicLink.GetTarget
-- uid: HDF5.NET.H5SymbolicLink.Name
-  name: Name
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_Name
-  commentId: P:HDF5.NET.H5SymbolicLink.Name
-  fullName: HDF5.NET.H5SymbolicLink.Name
-  nameWithType: H5SymbolicLink.Name
-- uid: HDF5.NET.H5SymbolicLink.Name*
-  name: Name
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_Name_
-  commentId: Overload:HDF5.NET.H5SymbolicLink.Name
-  isSpec: "True"
-  fullName: HDF5.NET.H5SymbolicLink.Name
-  nameWithType: H5SymbolicLink.Name
-- uid: HDF5.NET.H5SymbolicLink.ObjectPath
-  name: ObjectPath
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_ObjectPath
-  commentId: P:HDF5.NET.H5SymbolicLink.ObjectPath
-  fullName: HDF5.NET.H5SymbolicLink.ObjectPath
-  nameWithType: H5SymbolicLink.ObjectPath
-- uid: HDF5.NET.H5SymbolicLink.ObjectPath*
-  name: ObjectPath
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_ObjectPath_
-  commentId: Overload:HDF5.NET.H5SymbolicLink.ObjectPath
-  isSpec: "True"
-  fullName: HDF5.NET.H5SymbolicLink.ObjectPath
-  nameWithType: H5SymbolicLink.ObjectPath
-- uid: HDF5.NET.H5SymbolicLink.Value
-  name: Value
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_Value
-  commentId: P:HDF5.NET.H5SymbolicLink.Value
-  fullName: HDF5.NET.H5SymbolicLink.Value
-  nameWithType: H5SymbolicLink.Value
-- uid: HDF5.NET.H5SymbolicLink.Value*
-  name: Value
-  href: api/HDF5.NET.H5SymbolicLink.html#HDF5_NET_H5SymbolicLink_Value_
-  commentId: Overload:HDF5.NET.H5SymbolicLink.Value
-  isSpec: "True"
-  fullName: HDF5.NET.H5SymbolicLink.Value
-  nameWithType: H5SymbolicLink.Value
 - uid: HDF5.NET.H5UnresolvedLink
   name: H5UnresolvedLink
   href: api/HDF5.NET.H5UnresolvedLink.html
