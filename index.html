@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HDF5.NET | HDF5.NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="HDF5.NET | HDF5.NET ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><strong>See <a href="https://github.com/Apollo3zehn/HDF5.NET/issues/9">https://github.com/Apollo3zehn/HDF5.NET/issues/9</a> for not yet implemented features.</strong></p>
+<h1 id="hdf5net">HDF5.NET</h1>
+<p><a href="https://ci.appveyor.com/project/Apollo3zehn/hdf5-net"><img src="https://ci.appveyor.com/api/projects/status/github/apollo3zehn/hdf5.net?svg=true" alt="AppVeyor"></a> <a href="https://www.nuget.org/packages/HDF5.NET"><img src="https://img.shields.io/nuget/vpre/HDF5.NET.svg?label=Nuget" alt="NuGet"></a></p>
+<p>A pure C# library that makes reading of HDF5 files (groups, datasets, attributes, links, ...) very easy.</p>
+<p>The implemention follows the <a href="https://support.hdfgroup.org/HDF5/doc/H5.format.html">HDF5 File Format Specification</a></p>
+<h2 id="1-objects">1. Objects</h2>
+<pre><code class="lang-cs">// open HDF5 file, the returned H5File instance represents the root group ('/')
+using var root = H5File.OpenRead(filePath);
+</code></pre>
+<h3 id="11-get-object">1.1 Get Object</h3>
+<h4 id="group">Group</h4>
+<pre><code class="lang-cs">// get nested group
+var group = root.Group(&quot;/my/nested/group&quot;);
+</code></pre>
+<h4 id="dataset">Dataset</h4>
+<pre><code class="lang-cs">
+// get dataset in group
+var dataset = group.Dataset(&quot;myDataset&quot;);
+
+// alternatively, use the full path
+var dataset = group.Dataset(&quot;/my/nested/group/myDataset&quot;);
+</code></pre>
+<h4 id="commited-data-type">Commited Data Type</h4>
+<pre><code class="lang-cs">// get commited data type in group
+var commitedDatatype = group.CommitedDatatype(&quot;myCommitedDatatype&quot;);
+</code></pre>
+<h4 id="any-object-type">Any Object Type</h4>
+<p>When you do not know what kind of link to expect at a given path, use the following code:</p>
+<pre><code class="lang-cs">// get H5Object (base class of all HDF5 object types)
+var myH5Object = group.Get(&quot;/path/to/unknown/object&quot;);
+</code></pre>
+<h3 id="12-additional-info">1.2 Additional Info</h3>
+<h4 id="external-file-link">External File Link</h4>
+<p>With an external link pointing to a relative file path it might be necessary to provide a file prefix (see also this <a href="https://support.hdfgroup.org/HDF5/doc/RM/H5L/H5Lcreate_external.htm">overview</a>).</p>
+<p>You can either set an environment variable:</p>
+<pre><code class="lang-cs"> Environment.SetEnvironmentVariable(&quot;HDF5_EXT_PREFIX&quot;, &quot;/my/prefix/path&quot;);
+</code></pre>
+<p>Or you can pass the prefix as an overload parameter:</p>
+<pre><code class="lang-cs">var linkAccess = new H5LinkAccess() 
+{
+    ExternalLinkPrefix = prefix 
+}
+
+var dataset = group.Dataset(path, linkAccess);
+</code></pre>
+<h4 id="iteration">Iteration</h4>
+<p>Iterate through all link in a group:</p>
+<pre><code class="lang-cs">foreach (var link in group.Children)
+{
+    var message = link switch
+    {
+        H5Group group               =&gt; $&quot;I am a group and my name is '{group.Name}'.&quot;,
+        H5Dataset dataset           =&gt; $&quot;I am a dataset, call me '{dataset.Name}'.&quot;,
+        H5CommitedDatatype datatype =&gt; $&quot;I am the data type '{datatype.Name}'.&quot;,
+        H5UnresolvedLink lostLink   =&gt; $&quot;I cannot find my link target =( shame on '{lostLink.Name}'.&quot;
+        _                           =&gt; throw new Exception(&quot;Unknown link type&quot;);
+    }
+
+    Console.WriteLine(message)
+}
+</code></pre>
+<p>An <code>H5UnresolvedLink</code> becomes part of the <code>Children</code> collection when a symbolic link is dangling, i.e. the link target does not exist or cannot be accessed.</p>
+<h2 id="2-attributes">2. Attributes</h2>
+<pre><code class="lang-cs">// get attribute of group
+var attribute = group.Attribute(&quot;myAttributeOnAGroup&quot;);
+
+// get attribute of dataset
+var attribute = dataset.Attribute(&quot;myAttributeOnADataset&quot;);
+</code></pre>
+<h2 id="3-data">3. Data</h2>
+<p>The following code samples work for datasets as well as attributes.</p>
+<pre><code class="lang-cs">// class: fixed-point
+
+    var data = dataset.Read&lt;int&gt;();
+
+// class: floating-point
+
+    var data = dataset.Read&lt;double&gt;();
+
+// class: string
+
+    var data = dataset.ReadString();
+
+// class: bitfield
+
+    [Flags]
+    enum SystemStatus : ushort /* make sure the enum in HDF file is based on the same type */
+    {
+        MainValve_Open          = 0x0001
+        AuxValve_1_Open         = 0x0002
+        AuxValve_2_Open         = 0x0004
+        MainEngine_Ready        = 0x0008
+        FallbackEngine_Ready    = 0x0010
+        // ...
+    }
+
+    var data = dataset.Read&lt;SystemStatus&gt;();
+    var readyToLaunch = data[0].HasFlag(SystemStatus.MainValve_Open | SystemStatus.MainEngine_Ready);
+
+// class: opaque
+
+    var data = dataset.Read&lt;byte&gt;();
+    var data = dataset.Read&lt;MyOpaqueStruct&gt;();
+
+// class: compound
+
+    /* option 1 (faster) */
+    var data = dataset.Read&lt;MyNonNullableStruct&gt;();
+    /* option 2 (slower, for more info see the link below after this code block) */
+    var data = dataset.ReadCompound&lt;MyNullableStruct&gt;();
+
+// class: reference
+
+    var data = dataset.Read&lt;H5ObjectReference&gt;();
+    var firstRef = data.First();
+
+    /* NOTE: Dereferencing would be quite fast if the object's name
+     * was known. Instead, the library searches recursively for the  
+     * object. Do not dereference using a parent (group) that contains
+     * any circular soft links. Hard links are no problem.
+     */
+
+    /* option 1 (faster) */
+    var firstObject = directParent.Get(firstRef);
+
+    /* option 1 (slower, use if you don't know the objects parent) */
+    var firstObject = root.Get(firstRef);
+
+// class: enumerated
+
+    enum MyEnum : short /* make sure the enum in HDF file is based on the same type */
+    {
+        MyValue1 = 1,
+        MyValue2 = 2,
+        // ...
+    }
+
+    var data = dataset.Read&lt;MyEnum&gt;();
+
+// class: variable length
+
+    var data = dataset.ReadString();
+
+// class: array
+
+    var data = dataset
+        .Read&lt;int&gt;()
+        /* dataset dims = int[2, 3] */
+        /*   array dims = int[4, 5] */
+        .ToArray4D(2, 3, 4, 5);
+
+// class: time
+// -&gt; not supported (reason: the HDF5 C lib itself does not fully support H5T_TIME)
+</code></pre>
+<p>For more information on compound data, see section <a href="#Reading-compound-data">Reading compound data</a>.</p>
+<h2 id="4-partial-io-and-hyperslabs">4. Partial I/O and Hyperslabs</h2>
+<p>Partial I/O is one of the strengths of HDF5 and is applicable to all dataset types (contiguous, compact and chunked). With HDF5.NET, the full dataset can be read with a simple call to <code>dataset.Read()</code>. However, if you want to read only parts of the dataset, <a href="https://support.hdfgroup.org/HDF5/Tutor/selectsimple.html">hyperslab selections</a> are your friend. The following code shows how to work with these selections using a three-dimensional dataset (source) and a two-dimensional memory buffer (target):</p>
+<pre><code class="lang-cs">var dataset = root.Dataset(&quot;myDataset&quot;);
+var memoryDims = new ulong[] { 75, 25 };
+
+var datasetSelection = new HyperslabSelection(
+    rank: 3,
+    starts: new ulong[] { 2, 2, 0 },
+    strides: new ulong[] { 5, 8, 2 },
+    counts: new ulong[] { 5, 3, 2 },
+    blocks: new ulong[] { 3, 5, 2 }
+);
+
+var memorySelection = new HyperslabSelection(
+    rank: 2,
+    starts: new ulong[] { 2, 1 },
+    strides: new ulong[] { 35, 17 },
+    counts: new ulong[] { 2, 1 },
+    blocks: new ulong[] { 30, 15 }
+);
+
+var result = dataset
+    .Read&lt;int&gt;(
+        fileSelection: datasetSelection,
+        memorySelection: memorySelection,
+        memoryDims: memoryDims
+    )
+    .ToArray2D(75, 25);
+</code></pre>
+<p>All shown parameters are optional. For example, when the <code>fileSelection</code> parameter is unspecified, the whole dataset will be read. Note that the number of data points in the file selection must always match that of the memory selection.</p>
+<p>Additionally, there is an overload method that allows you to provide your own buffer.</p>
+<h2 id="5-filters">5. Filters</h2>
+<h3 id="built-in-filters">Built-in Filters</h3>
+<ul>
+<li>Shuffle (hardware accelerated, SSE2/AVX2)</li>
+<li>Fletcher32</li>
+<li>Deflate (zlib)</li>
+</ul>
+<h3 id="external-filters">External Filters</h3>
+<p>Before you can use external filters, you need to register them using <code>H5Filter.Register(...)</code>. This method accepts a filter identifier, a filter name and the actual filter function.</p>
+<p>This function could look like the following and should be adapted to your specific filter library:</p>
+<pre><code class="lang-cs">public static Memory&lt;byte&gt; FilterFunc(
+    H5FilterFlags flags, 
+    uint[] parameters, 
+    Memory&lt;byte&gt; buffer)
+{
+    // Decompressing
+    if (flags.HasFlag(H5FilterFlags.Decompress))
+    {
+        // pseudo code
+        byte[] decompressedData = MyFilter.Decompress(parameters, buffer.Span);
+        return decompressedData;
+    }
+    // Compressing
+    else
+    {
+        throw new Exception(&quot;Writing data chunks is not yet supported by HDF5.NET.&quot;);
+    }
+}
+
+</code></pre>
+<h3 id="tested-external-filters">Tested External Filters</h3>
+<ul>
+<li>c-blosc2 (using <a href="https://www.nuget.org/packages/Blosc2.PInvoke">Blosc2.PInvoke</a>)</li>
+<li>bzip2 (using <a href="https://www.nuget.org/packages/SharpZipLib">SharpZipLib</a>)</li>
+</ul>
+<h3 id="how-to-use-blosc--blosc2">How to use Blosc / Blosc2</h3>
+<p>(1) Install the P/Invoke package:</p>
+<p><code>dotnet package add Blosc2.PInvoke</code></p>
+<p>(2) Add the Blosc filter registration <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/tests/HDF5.NET.Tests/Utils/BloscHelper.cs">helper function</a> to your code.</p>
+<p>(3) Register Blosc:</p>
+<pre><code class="lang-cs"> H5Filter.Register(
+     identifier: (FilterIdentifier)32001, 
+     name: &quot;blosc2&quot;, 
+     filterFunc: BloscHelper.FilterFunc);
+</code></pre>
+<h3 id="how-to-use-bzip2">How to use BZip2</h3>
+<p>(1) Install the SharpZipLib package:</p>
+<p><code>dotnet package add SharpZipLib</code></p>
+<p>(2) Add the BZip2 filter registration <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/tests/HDF5.NET.Tests/Utils/BZip2Helper.cs">helper function</a> to your code.</p>
+<p>(3) Register BZip2:</p>
+<pre><code class="lang-cs"> H5Filter.Register(
+     identifier: (FilterIdentifier)307, 
+     name: &quot;bzip2&quot;, 
+     filterFunc: BZip2Helper.FilterFunc);
+</code></pre>
+<h2 id="6-advanced-scenarios">6. Advanced Scenarios</h2>
+<h3 id="reading-multidimensional-data">Reading Multidimensional Data</h3>
+<p>Sometimes you want to read the data as multidimensional arrays. In that case use one of the <code>byte[]</code> overloads like <code>ToArray3D</code> (there are overloads up to 6D). Here is an example:</p>
+<pre><code class="lang-cs">var data3D = dataset
+    .Read&lt;int&gt;()
+    .ToArray3D(new long[] { -1, 7, 2 });
+</code></pre>
+<p>The methods accepts a <code>long[]</code> with the new array dimensions. This feature works similar to Matlab's <a href="https://de.mathworks.com/help/matlab/ref/reshape.html">reshape</a> function. A slightly adapted citation explains the behavior:</p>
+<blockquote>
+<p>When you use <code>-1</code> to automatically calculate a dimension size, the dimensions that you <em>do</em> explicitly specify must divide evenly into the number of elements in the input array.</p>
+</blockquote>
+<h3 id="reading-compound-data">Reading Compound Data</h3>
+<h5 id="structs-without-nullable-fields">Structs without nullable fields</h5>
+<p>Structs without any nullable fields (i.e. no strings and other reference types) can be read like any other dataset using a high performance copy operation:</p>
+<pre><code class="lang-cs">[StructLayout(LayoutKind.Explicit, Size = 5)]
+internal struct SimpleStruct
+{
+    [FieldOffset(0)]
+    public byte ByteValue;
+
+    [FieldOffset(1)]
+    public ushort UShortValue;
+
+    [FieldOffset(3)]
+    public TestEnum EnumValue;
+}
+
+var compoundData = dataset.Read&lt;SimpleStruct&gt;();
+</code></pre>
+<p>Just make sure the field offset attributes matches the field offsets defined in the HDF5 file when the dataset was created.</p>
+<p><em>This method does not require that the structs field names match since they are simply mapped by their offset.</em></p>
+<h5 id="structs-with-nullable-fields">Structs with nullable fields</h5>
+<p>If you have a struct with string fields, you need to use the slower <code>ReadCompound</code> method:</p>
+<pre><code class="lang-cs">internal struct NullableStruct
+{
+    public float FloatValue;
+    public string StringValue1;
+    public string StringValue2;
+    public byte ByteValue;
+    public short ShortValue;
+}
+
+var compoundData = dataset.ReadCompound&lt;NullableStruct&gt;();
+var compoundData = attribute.ReadCompound&lt;NullableStruct&gt;();
+</code></pre>
+<p><em>This method requires no special attributes but it is mandatory that the field names match exactly to those in the HDF5 file. If you would like to use custom field names, consider the following solution:</em></p>
+<pre><code class="lang-cs">
+// Apply the H5NameAttribute to the field with custom name.
+internal struct NullableStructWithCustomFieldName
+{
+    [H5Name(&quot;FloatValue&quot;)]
+    public float FloatValueWithCustomName;
+
+    // ... more fields
+}
+
+// Create a name translator.
+Func&lt;FieldInfo, string&gt; converter = fieldInfo =&gt;
+{
+    var attribute = fieldInfo.GetCustomAttribute&lt;H5NameAttribute&gt;(true);
+    return attribute is not null ? attribute.Name : fieldInfo.Name;
+};
+
+// Use that name translator.
+var compoundData = dataset.ReadCompound&lt;NullableStructWithCustomFieldName&gt;(converter);
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/doc/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2021 Vincent Wilms
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

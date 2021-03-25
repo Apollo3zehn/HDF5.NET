@@ -1,0 +1,540 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Git/GitHub/HDF5.NET/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.ArrayExtensions.html",
+          "hash": "8TZkB4K01Gh/tt2yJd89TA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.EndiannessConverterGeneric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.EndiannessConverterGeneric.html",
+          "hash": "qSQ90VqjN4WsBnehulM0AQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.FilterFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.FilterFunc.html",
+          "hash": "frIIyk2lWcxSewl9DHLDrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5AttributableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5AttributableObject.html",
+          "hash": "W7rxs7jy/cK2gBy8Sb2h3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Attribute.html",
+          "hash": "rbXPK2nq+HWhLSNAsMLSeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5CommitedDatatype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5CommitedDatatype.html",
+          "hash": "bCSPs9LzwfUNL3UmAQw7Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Constants.html",
+          "hash": "b5mlFR+J+yM1qQyW7ldkKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5DataLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5DataLayout.html",
+          "hash": "CUPqeYP3jBO2MNzIXWtL+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5DataLayoutClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5DataLayoutClass.html",
+          "hash": "YwF1eRicVr3bQuTWNzcchQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5DataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5DataType.html",
+          "hash": "/9GnW5zKV3sFmDxq6BYi+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5DataTypeClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5DataTypeClass.html",
+          "hash": "yUdWPEE9KWRRwT5MIG4aWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Dataset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Dataset.html",
+          "hash": "dkbup3hoBy35pxKziPpaTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5DatasetAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5DatasetAccess.html",
+          "hash": "/6MTWPS88FMXzIkTXpJd6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Dataspace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Dataspace.html",
+          "hash": "qROGfYA5FO2ziWb04BP0fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5DataspaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5DataspaceType.html",
+          "hash": "Xh4KMc45wWrzZFn9z42Pow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5File.html",
+          "hash": "l5bnCXTn4+33ubugBMuz1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5FillValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5FillValue.html",
+          "hash": "uEtNF4rjvMRSRSAxaFmyXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Filter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Filter.html",
+          "hash": "uy/qJpt1dXe2dkq8+rAYgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5FilterFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5FilterFlags.html",
+          "hash": "ISp+Ssb2IXPa+g31qDMQwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5FilterID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5FilterID.html",
+          "hash": "wlMq6QHR+r8eW36Adr6msA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Group.html",
+          "hash": "mVzxBqegs3FVZ/g0ZboVeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5LinkAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5LinkAccess.html",
+          "hash": "p/Hc08JweEDDtpHNmdSeww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5NameAttribute.html",
+          "hash": "Ev0Xz3fUOnFYhCebbMnqJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5NamedReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5NamedReference.html",
+          "hash": "T9Ca5oSDC7x/jJ9jmdpWYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5Object.html",
+          "hash": "dmiUisO3dFS/s5BcX9eJQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5ObjectReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5ObjectReference.html",
+          "hash": "5xv6LWqILTKHiHchVuJ6+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5RegionReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5RegionReference.html",
+          "hash": "9eY3VWB8/6V0fTwcOgUw2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5SymbolicLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5SymbolicLink.html",
+          "hash": "4WJnutar11TgbhVPAG/GyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.H5UnresolvedLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.H5UnresolvedLink.html",
+          "hash": "ECbOY/gV3DCpIWCkMvb23g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.HyperslabSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.HyperslabSelection.html",
+          "hash": "iSGU+9KhZM79fVUIyjzqGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.IChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.IChunkCache.html",
+          "hash": "WeMPfFs5DQPMw/cTf5NVtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.Selection.html",
+          "hash": "uiSF6yYZ0x9zLt29k+JqEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.SimpleChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.SimpleChunkCache.html",
+          "hash": "56QiuouUMMIrh6YL10sqdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HDF5.NET.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HDF5.NET.html",
+          "hash": "CuTHiqqK/KVR9PWJQqSWhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "8p4E/MBuc5o+mytTwvFMwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "TPiypJ17jy4h+HJrDkrOIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ByGO54enQKD6XVxFOsvKTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 34,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
