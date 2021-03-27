@@ -250,10 +250,11 @@ var result = dataset
 <h2 id="5-filters">5. Filters</h2>
 <h3 id="built-in-filters">Built-in Filters</h3>
 <ul>
-<li>Shuffle (hardware accelerated, SSE2/AVX2)</li>
+<li>Shuffle (hardware accelerated<sup>1</sup>, SSE2/AVX2)</li>
 <li>Fletcher32</li>
 <li>Deflate (zlib)</li>
 </ul>
+<p><sup>1</sup> NET Standard 2.1 and above</p>
 <h3 id="external-filters">External Filters</h3>
 <p>Before you can use external filters, you need to register them using <code>H5Filter.Register(...)</code>. This method accepts a filter identifier, a filter name and the actual filter function.</p>
 <p>This function could look like the following and should be adapted to your specific filter library:</p>
@@ -288,17 +289,17 @@ var result = dataset
 <p>(2) Add the Blosc filter registration <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/tests/HDF5.NET.Tests/Utils/BloscHelper.cs">helper function</a> to your code.</p>
 <p>(3) Register Blosc:</p>
 <pre><code class="lang-cs"> H5Filter.Register(
-     identifier: (FilterIdentifier)32001, 
+     identifier: (H5FilterID)32001, 
      name: &quot;blosc2&quot;, 
      filterFunc: BloscHelper.FilterFunc);
 </code></pre>
 <h3 id="how-to-use-bzip2">How to use BZip2</h3>
 <p>(1) Install the SharpZipLib package:</p>
 <p><code>dotnet package add SharpZipLib</code></p>
-<p>(2) Add the BZip2 filter registration <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/tests/HDF5.NET.Tests/Utils/BZip2Helper.cs">helper function</a> to your code.</p>
+<p>(2) Add the BZip2 filter registration <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/tests/HDF5.NET.Tests/Utils/BZip2Helper.cs">helper function</a> and the <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/Utils/Streams/MemorySpanStream.cs">MemorySpanStream</a> implementation to your code.</p>
 <p>(3) Register BZip2:</p>
 <pre><code class="lang-cs"> H5Filter.Register(
-     identifier: (FilterIdentifier)307, 
+     identifier: (H5FilterID)307, 
      name: &quot;bzip2&quot;, 
      filterFunc: BZip2Helper.FilterFunc);
 </code></pre>
