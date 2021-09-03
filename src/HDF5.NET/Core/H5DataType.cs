@@ -1,4 +1,6 @@
-﻿namespace HDF5.NET
+﻿using System.Collections.ObjectModel;
+
+namespace HDF5.NET
 {
     partial class H5DataType
     {
@@ -15,6 +17,10 @@
             _dataType = datatype;
         }
 
+        #endregion
+
+        #region Properties
+        public ReadOnlyCollection<DatatypePropertyDescription> Properties => _dataType.Properties;
         #endregion
     }
 }

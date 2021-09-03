@@ -2,11 +2,11 @@
 
 namespace HDF5.NET
 {
-    internal class CompoundPropertyDescription : DatatypePropertyDescription
+    public class CompoundPropertyDescription : DatatypePropertyDescription
     {
         #region Constructors
 
-        public CompoundPropertyDescription(H5BinaryReader reader, byte version, uint valueSize) : base(reader)
+        internal CompoundPropertyDescription(H5BinaryReader reader, byte version, uint valueSize) : base(reader)
         {
             switch (version)
             {
@@ -90,9 +90,9 @@ namespace HDF5.NET
 
         #region Properties
 
-        public string Name { get; set; }
-        public ulong MemberByteOffset { get; set; }
-        public DatatypeMessage MemberTypeMessage { get; set; }
+        public string Name { get; private set; }
+        public ulong MemberByteOffset { get; private set; }
+        public DatatypeMessage MemberTypeMessage { get; private set; }
 
         #endregion
     }

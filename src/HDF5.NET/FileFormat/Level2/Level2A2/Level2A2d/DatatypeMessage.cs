@@ -1,13 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace HDF5.NET
 {
-    internal class DatatypeMessage : Message
+    public class DatatypeMessage : Message
     {
+        #region Fields
+
+        private List<DatatypePropertyDescription> _properties;
+
+        #endregion
+
         #region Constructors
 
-        public DatatypeMessage(H5BinaryReader reader) : base(reader)
+        internal DatatypeMessage(H5BinaryReader reader) : base(reader)
         {
             this.ClassVersion = reader.ReadByte();
 
@@ -34,7 +41,7 @@ namespace HDF5.NET
             if (this.Class == DatatypeMessageClass.Compound)
                 memberCount = ((CompoundBitFieldDescription)this.BitField).MemberCount;
 
-            this.Properties = new List<DatatypePropertyDescription>(memberCount);
+            _properties = new List<DatatypePropertyDescription>(memberCount);
 
             for (int i = 0; i < memberCount; i++)
             {
@@ -55,7 +62,7 @@ namespace HDF5.NET
                 };
 
                 if (properties is not null)
-                    this.Properties.Add(properties);
+                    _properties.Add(properties);
             }
         }
 
@@ -63,9 +70,9 @@ namespace HDF5.NET
 
         #region Properties
 
-        public DatatypeBitFieldDescription BitField { get; set; }
-        public uint Size { get; set; }
-        public List<DatatypePropertyDescription> Properties { get; set; }
+        public DatatypeBitFieldDescription BitField { get; private set; }
+        public uint Size { get; private set; }
+        public ReadOnlyCollection<DatatypePropertyDescription> Properties { get => _properties.AsReadOnly(); }
 
         public byte Version
         {
@@ -73,7 +80,7 @@ namespace HDF5.NET
             {
                 return (byte)(this.ClassVersion >> 4);
             }
-            set
+            private set
             {
                 if (!(1 <= value && value <= 3))
                     throw new Exception("The version number must be in the range of 1..3.");
@@ -89,7 +96,7 @@ namespace HDF5.NET
             {
                 return (DatatypeMessageClass)(this.ClassVersion & 0x0F);
             }
-            set
+            private set
             {
                 if (!(0 <= (byte)value && (byte)value <= 10))
                     throw new Exception("The version number must be in the range of 0..10.");
