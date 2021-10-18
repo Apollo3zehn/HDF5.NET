@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -19,7 +20,7 @@ namespace HDF5.NET
 
         #region Fields
 
-        private Dictionary<ulong[], ChunkInfo> _chunkInfoMap;
+        private ConcurrentDictionary<ulong[], ChunkInfo> _chunkInfoMap;
 
         #endregion
 
@@ -32,7 +33,7 @@ namespace HDF5.NET
                 .FirstOrDefault();
 
             this.ConsumedBytes -= (ulong)entry.Value.Chunk.Length;
-            _chunkInfoMap.Remove(entry.Key);
+            _chunkInfoMap.Remove(entry.Key, out var _);
         }
 
         // https://stackoverflow.com/questions/14663168/an-integer-array-as-a-key-for-dictionary

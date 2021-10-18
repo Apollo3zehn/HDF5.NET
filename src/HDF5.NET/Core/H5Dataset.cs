@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
@@ -90,7 +91,7 @@ namespace HDF5.NET
 
 #warning use implicit cast operator for multi dim arrays? http://dontcodetired.com/blog/post/Writing-Implicit-and-Explicit-C-Conversion-Operators
 
-        internal T[]? Read<T>(
+        internal async Task<T[]?> ReadAsync<T>(
             Memory<T> buffer,
             Selection? fileSelection = default,
             Selection? memorySelection = default,
@@ -180,8 +181,8 @@ namespace HDF5.NET
 
             bufferProvider.Initialize();
 
-            Func<ulong[], Memory<byte>>? getSourceBuffer = bufferProvider.SupportsBuffer
-               ? chunkIndices => bufferProvider.GetBuffer(chunkIndices)
+            Func<ulong[], Task<Memory<byte>>>? getSourceBufferAsync = bufferProvider.SupportsBuffer
+               ? chunkIndices => bufferProvider.GetBufferAsync(chunkIndices)
                : null;
 
             Func<ulong[], Stream>? getSourceStream = bufferProvider.SupportsStream
@@ -234,7 +235,7 @@ namespace HDF5.NET
             if (memoryDims is null)
                 memoryDims = new ulong[] { totalCount };
 
-            if (getSourceBuffer is null && getSourceStream is null)
+            if (getSourceBufferAsync is null && getSourceStream is null)
                 new Exception($"The data layout class '{this.InternalDataLayout.LayoutClass}' is not supported.");
 
             /* copy info */
@@ -245,21 +246,21 @@ namespace HDF5.NET
                 memoryDims,
                 fileSelection,
                 memorySelection,
-                GetSourceBuffer: getSourceBuffer,
+                GetSourceBufferAsync: getSourceBufferAsync,
                 GetSourceStream: getSourceStream,
-                GetTargetBuffer: indices => buffer.Cast<T, byte>(),
+                GetTargetBufferAsync: indices => Task.FromResult(buffer.Cast<T, byte>()),
                 TypeSize: (int)this.InternalDataType.Size
             );
 
-            SelectionUtils.Copy(datasetChunkDims.Length, memoryDims.Length, copyInfo);
+            await SelectionUtils.Copy(datasetChunkDims.Length, memoryDims.Length, copyInfo);
 
-            /* ensure correct endianness */
-            var byteOrderAware = this.InternalDataType.BitField as IByteOrderAware;
-            var destination = MemoryMarshal.AsBytes(buffer.Span);
-            var source = destination.ToArray();
+            ///* ensure correct endianness */
+            //var byteOrderAware = this.InternalDataType.BitField as IByteOrderAware;
+            //var destination = MemoryMarshal.AsBytes(buffer.Span);
+            //var source = destination.ToArray();
 
-            if (byteOrderAware is not null)
-                H5Utils.EnsureEndianness(source, destination, byteOrderAware.ByteOrder, this.InternalDataType.Size);
+            //if (byteOrderAware is not null)
+            //    H5Utils.EnsureEndianness(source, destination, byteOrderAware.ByteOrder, this.InternalDataType.Size);
 
             /* return */
             return result;

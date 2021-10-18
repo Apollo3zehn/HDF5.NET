@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
@@ -12,9 +14,9 @@ namespace HDF5.NET
         ulong[] TargetChunkDims,
         Selection SourceSelection,
         Selection TargetSelection,
-        Func<ulong[], Memory<byte>>? GetSourceBuffer,
+        Func<ulong[], Task<Memory<byte>>>? GetSourceBufferAsync,
         Func<ulong[], Stream>? GetSourceStream,
-        Func<ulong[], Memory<byte>> GetTargetBuffer,
+        Func<ulong[], Task<Memory<byte>>> GetTargetBufferAsync,
         int TypeSize
     );
 
@@ -83,7 +85,7 @@ namespace HDF5.NET
             }
         }
 
-        public static void Copy(int sourceRank, int targetRank, CopyInfo copyInfo)
+        public static async Task Copy(int sourceRank, int targetRank, CopyInfo copyInfo)
         {
             /* validate selections */
             if (copyInfo.SourceSelection.TotalElementCount != copyInfo.TargetSelection.TotalElementCount)
@@ -106,26 +108,88 @@ namespace HDF5.NET
                .GetEnumerator();
 
             /* select method */
-            if (copyInfo.GetSourceBuffer is not null)
-                SelectionUtils.CopyMemory(sourceWalker, targetWalker, copyInfo);
+            if (copyInfo.GetSourceBufferAsync is not null)
+            {
+                var copyTasks = SelectionUtils.CopyMemory(sourceWalker, targetWalker, copyInfo);
+                var fifo = new BlockingCollection<CopyTask>(boundedCapacity: 100);
+
+                var producer = Task.Run(() =>
+                {
+                    foreach (var copyTask in copyTasks)
+                    {
+                        Console.WriteLine("Add.");
+                        fifo.Add(copyTask);
+                    }
+
+                    fifo.CompleteAdding();
+                });
+
+                var consumer = Task.Run(async () =>
+                {
+                    try
+                    {
+                        while (!fifo.IsCompleted)
+                        {
+                            var copyTask = default(CopyTask);
+
+                            try
+                            {
+                                Console.WriteLine("Remove.");
+                                copyTask = fifo.Take();
+                            }
+                            catch (InvalidOperationException)
+                            {
+                                //
+                            }
+
+                            var currentSourceBuffer = (await copyTask.SourceBufferTask)
+                                .Slice(copyTask.SourceOffset, copyTask.Length);
+
+                            var currentTargetBuffer = (await copyTask.TargetBufferTask)
+                                .Slice(copyTask.TargetOffset, copyTask.Length);
+
+                            currentSourceBuffer.CopyTo(currentTargetBuffer);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                        throw;
+                    }
+                });
+
+                await Task.WhenAll(producer, consumer);
+            }
 
             else if (copyInfo.GetSourceStream is not null)
+            {
                 SelectionUtils.CopyStream(sourceWalker, targetWalker, copyInfo);
+            }
 
             else
+            {
                 new Exception($"Either GetSourceBuffer() or GetSourceStream must be non-null.");
+            }
         }
 
-        private static void CopyMemory(IEnumerator<RelativeStep> sourceWalker, IEnumerator<RelativeStep> targetWalker, CopyInfo copyInfo)
+        private struct CopyTask
+        {
+            public Task<Memory<byte>> SourceBufferTask;
+            public int SourceOffset;
+            public Task<Memory<byte>> TargetBufferTask;
+            public int TargetOffset;
+            public int Length;
+        }
+
+        private static IEnumerable<CopyTask> CopyMemory(IEnumerator<RelativeStep> sourceWalker, IEnumerator<RelativeStep> targetWalker, CopyInfo copyInfo)
         {
             /* initialize source walker */
-            var sourceBuffer = default(Memory<byte>);
+            var sourceBufferTask = default(Task<Memory<byte>>);
             var lastSourceChunk = default(ulong[]);
 
             /* initialize target walker */
-            var targetBuffer = default(Memory<byte>);
+            var targetBufferTask = default(Task<Memory<byte>>);
             var lastTargetChunk = default(ulong[]);
-            var currentTarget = default(Memory<byte>);
 
             /* walk until end */
             while (sourceWalker.MoveNext())
@@ -133,21 +197,23 @@ namespace HDF5.NET
                 /* load next source buffer */
                 var sourceStep = sourceWalker.Current;
 
-                if (sourceBuffer.Length == 0 /* if buffer not assigned yet */ ||
+                if (sourceBufferTask is null /* if buffer not assigned yet */ ||
                     !sourceStep.Chunk.SequenceEqual(lastSourceChunk) /* or the chunk has changed */)
                 {
-                    sourceBuffer = copyInfo.GetSourceBuffer(sourceStep.Chunk);
+                    sourceBufferTask = copyInfo.GetSourceBufferAsync(sourceStep.Chunk);
                     lastSourceChunk = sourceStep.Chunk;
                 }
 
-                var currentSource = sourceBuffer.Slice(
-                    (int)sourceStep.Offset * copyInfo.TypeSize,
-                    (int)sourceStep.Length * copyInfo.TypeSize);
+                var currentSourceOffset = (int)sourceStep.Offset * copyInfo.TypeSize;
+                var currentSourceLength = (int)sourceStep.Length * copyInfo.TypeSize;
 
-                while (currentSource.Length > 0)
+                var currentTargetOffset = default(int);
+                var currentTargetLength = default(int);
+
+                while (currentSourceLength > 0)
                 {
                     /* load next target buffer */
-                    if (currentTarget.Length == 0)
+                    if (currentTargetLength == 0)
                     {
                         var success = targetWalker.MoveNext();
                         var targetStep = targetWalker.Current;
@@ -155,27 +221,34 @@ namespace HDF5.NET
                         if (!success || targetStep.Length == 0)
                             throw new UriFormatException("The target walker stopped early.");
 
-                        if (targetBuffer.Length == 0 /* if buffer not assigned yet */ ||
+                        if (targetBufferTask is null /* if buffer not assigned yet */ ||
                             !targetStep.Chunk.SequenceEqual(lastTargetChunk) /* or the chunk has changed */)
                         {
-                            targetBuffer = copyInfo.GetTargetBuffer(targetStep.Chunk);
+                            targetBufferTask = copyInfo.GetTargetBufferAsync(targetStep.Chunk);
                             lastTargetChunk = targetStep.Chunk;
                         }
 
-                        currentTarget = targetBuffer.Slice(
-                            (int)targetStep.Offset * copyInfo.TypeSize,
-                            (int)targetStep.Length * copyInfo.TypeSize);
+                        currentTargetOffset = (int)targetStep.Offset * copyInfo.TypeSize;
+                        currentTargetLength = (int)targetStep.Length * copyInfo.TypeSize;
                     }
 
                     /* copy */
-                    var length = Math.Min(currentSource.Length, currentTarget.Length);
+                    var length = Math.Min(currentSourceLength, currentTargetLength);
 
-                    currentSource
-                        .Slice(0, length)
-                        .CopyTo(currentTarget);
+                    yield return new CopyTask() 
+                    {
+                        SourceBufferTask = sourceBufferTask,
+                        SourceOffset = currentSourceOffset,
+                        TargetBufferTask = targetBufferTask,
+                        TargetOffset = currentTargetOffset,
+                        Length = length,
+                    };
 
-                    currentSource = currentSource.Slice(length);
-                    currentTarget = currentTarget.Slice(length);
+                    currentSourceOffset += length;
+                    currentSourceLength -= length;
+
+                    currentTargetOffset += length;
+                    currentTargetLength -= length;
                 }
             }
         }
@@ -221,7 +294,7 @@ namespace HDF5.NET
                         if (targetBuffer.Length == 0 /* if buffer not assigned yet */ ||
                             !targetStep.Chunk.SequenceEqual(lastTargetChunk) /* or the chunk has changed */)
                         {
-                            targetBuffer = copyInfo.GetTargetBuffer(targetStep.Chunk);
+                            targetBuffer = copyInfo.GetTargetBufferAsync(targetStep.Chunk).Result;
                             lastTargetChunk = targetStep.Chunk;
                         }
 

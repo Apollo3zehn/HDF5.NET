@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
@@ -28,7 +29,7 @@ namespace HDF5.NET
             return this.Dataset.GetDatasetDims();
         }
 
-        public override Memory<byte> GetBuffer(ulong[] chunkIndices)
+        public override Task<Memory<byte>> GetBufferAsync(ulong[] chunkIndices)
         {
             throw new NotImplementedException();
         }

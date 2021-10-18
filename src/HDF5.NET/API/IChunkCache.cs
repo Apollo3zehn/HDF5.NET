@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
     public interface IChunkCache
     {
-        public Memory<byte> GetChunk(ulong[] indices, Func<Memory<byte>> chunkLoader);
+        public Task<Memory<byte>> GetChunkAsync(ulong[] indices, Func<Task<Memory<byte>>> chunkLoader);
     }
 }

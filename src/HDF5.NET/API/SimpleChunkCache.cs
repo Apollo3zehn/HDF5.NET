@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
@@ -18,7 +20,7 @@ namespace HDF5.NET
             this.ChunkSlotCount = chunkSlotCount;
             this.ByteCount = byteCount;
 
-            _chunkInfoMap = new Dictionary<ulong[], ChunkInfo>(new ArrayEqualityComparer());
+            _chunkInfoMap = new ConcurrentDictionary<ulong[], ChunkInfo>(new ArrayEqualityComparer());
         }
 
         #endregion
@@ -37,7 +39,7 @@ namespace HDF5.NET
 
         #region Methods
 
-        public Memory<byte> GetChunk(ulong[] indices, Func<Memory<byte>> chunkLoader)
+        public async Task<Memory<byte>> GetChunkAsync(ulong[] indices, Func<Task<Memory<byte>>> chunkLoader)
         {
             if (_chunkInfoMap.TryGetValue(indices, out var chunkInfo))
             {
@@ -45,7 +47,7 @@ namespace HDF5.NET
             }
             else
             {
-                var buffer = chunkLoader.Invoke();
+                var buffer = await chunkLoader.Invoke();
                 chunkInfo = new ChunkInfo(LastAccess: DateTime.Now, buffer);
                 var chunk = chunkInfo.Chunk;
 

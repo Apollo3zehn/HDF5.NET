@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
@@ -57,13 +58,13 @@ namespace HDF5.NET
 
         #region Public
 
-        public byte[] Read(
+        public async Task<byte[]> ReadAsync(
             Selection? fileSelection = default,
             Selection? memorySelection = default,
             ulong[]? memoryDims = default,
             H5DatasetAccess datasetAccess = default)
         {
-            var result = this.Read<byte>(
+            var result = await this.ReadAsync<byte>(
                 null,
                 fileSelection,
                 memorySelection,
@@ -77,13 +78,13 @@ namespace HDF5.NET
             return result;
         }
 
-        public T[] Read<T>(
+        public async Task<T[]> ReadAsync<T>(
             Selection? fileSelection = default,
             Selection? memorySelection = default,
             ulong[]? memoryDims = default,
             H5DatasetAccess datasetAccess = default) where T : unmanaged
         {
-            var result = this.Read<T>(
+            var result = await this.ReadAsync<T>(
                 null,
                 fileSelection,
                 memorySelection,
@@ -97,14 +98,14 @@ namespace HDF5.NET
             return result;
         }
 
-        public void Read<T>(
+        public Task ReadAsync<T>(
             Memory<T> buffer,
             Selection? fileSelection = default,
             Selection? memorySelection = default,
             ulong[]? memoryDims = default,
             H5DatasetAccess datasetAccess = default) where T : unmanaged
         {
-            this.Read(
+            return this.ReadAsync(
                 buffer,
                 fileSelection,
                 memorySelection,
@@ -113,14 +114,14 @@ namespace HDF5.NET
                 skipShuffle: false);
         }
 
-        public T[] ReadCompound<T>(
+        public async Task<T[]> ReadCompoundAsync<T>(
            Func<FieldInfo, string>? getName = default,
            Selection? fileSelection = default,
            Selection? memorySelection = default,
            ulong[]? memoryDims = default,
            H5DatasetAccess datasetAccess = default) where T : struct
         {
-            var data = this.Read<byte>(
+            var data = await this.ReadAsync<byte>(
                 null,
                 fileSelection,
                 memorySelection,
@@ -137,13 +138,13 @@ namespace HDF5.NET
             return H5Utils.ReadCompound<T>(this.InternalDataType, this.InternalDataspace, this.Context.Superblock, data, getName);
         }
 
-        public string[] ReadString(
+        public async Task <string[]> ReadStringAsync(
             Selection? fileSelection = default,
             Selection? memorySelection = default,
             ulong[]? memoryDims = default,
             H5DatasetAccess datasetAccess = default)
         {
-            var data = this.Read<byte>(
+            var data = await this.ReadAsync<byte>(
                 null,
                 fileSelection,
                 memorySelection,

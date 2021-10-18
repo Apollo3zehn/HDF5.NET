@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 namespace HDF5.NET
 {
@@ -28,7 +29,7 @@ namespace HDF5.NET
             return this.Dataset.InternalDataspace.DimensionSizes;
         }
 
-        public override Memory<byte> GetBuffer(ulong[] chunkIndices)
+        public override Task<Memory<byte>> GetBufferAsync(ulong[] chunkIndices)
         {
             byte[] buffer;
 
@@ -47,7 +48,7 @@ namespace HDF5.NET
                 throw new Exception($"Data layout message type '{this.Dataset.InternalDataLayout.GetType().Name}' is not supported.");
             }
 
-            return buffer;
+            return Task.FromResult(buffer.AsMemory());
         }
 
         public override Stream? GetStream(ulong[] chunkIndices)
