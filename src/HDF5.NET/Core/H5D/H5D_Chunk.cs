@@ -3,6 +3,7 @@ using System.Buffers;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HDF5.NET
@@ -190,8 +191,12 @@ namespace HDF5.NET
                 }
                 else
                 {
-                    this.Dataset.Context.Reader.Seek((long)chunkInfo.Address, SeekOrigin.Begin);
-                    await this.ReadChunkAsync(buffer, chunkInfo.Size, chunkInfo.FilterMask);
+#warning Better make one file stream per thread instead of per call
+                    var fileStream = (FileStream)this.Dataset.Context.Reader.BaseStream;
+                    using var fileStreamNew = File.OpenRead(fileStream.Name);
+                    fileStreamNew.Seek((long)this.Dataset.Context.Reader.BaseAddress + (long)chunkInfo.Address, SeekOrigin.Begin);
+
+                    await this.ReadChunkAsync(buffer, chunkInfo.Size, chunkInfo.FilterMask, fileStreamNew);
                 }
             }
 
@@ -199,17 +204,19 @@ namespace HDF5.NET
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private async Task ReadChunkAsync(Memory<byte> buffer, ulong rawChunkSize, uint filterMask)
+        private async Task ReadChunkAsync(Memory<byte> buffer, ulong rawChunkSize, uint filterMask, Stream stream)
         {
             if (this.Dataset.InternalFilterPipeline is null)
             {
-                await this.Dataset.Context.Reader.BaseStream.ReadAsync(buffer);
+                await stream.ReadAsync(buffer);
             }
             else
             {
+
                 using var filterBufferOwner = MemoryPool<byte>.Shared.Rent((int)rawChunkSize);
                 var filterBuffer = filterBufferOwner.Memory[0..(int)rawChunkSize];
-                await this.Dataset.Context.Reader.BaseStream.ReadAsync(filterBuffer);
+
+                await stream.ReadAsync(filterBuffer);
 
                 await Task.Run(() =>
                     H5Filter.ExecutePipeline(this.Dataset.InternalFilterPipeline.FilterDescriptions, filterMask, H5FilterFlags.Decompress, filterBuffer, buffer));

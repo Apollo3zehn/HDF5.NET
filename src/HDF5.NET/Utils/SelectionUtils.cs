@@ -85,6 +85,9 @@ namespace HDF5.NET
             }
         }
 
+#error This branch is a test to make use of asnychronous and multithreaded code. Unfortunately it did not yet approve to be significantly faster. 
+#error The test and the test file is located at D:\Dev\HDF5. Time needed to read the data was about 11-15 s where the truly multithreaded approach
+#error resulted in an overall read time of about 4 - 6 s (https://github.com/Apollo3zehn/HDF5.NET/issues/17). Check what went wrong here.
         public static async Task Copy(int sourceRank, int targetRank, CopyInfo copyInfo)
         {
             /* validate selections */
@@ -117,7 +120,6 @@ namespace HDF5.NET
                 {
                     foreach (var copyTask in copyTasks)
                     {
-                        Console.WriteLine("Add.");
                         fifo.Add(copyTask);
                     }
 
@@ -126,35 +128,26 @@ namespace HDF5.NET
 
                 var consumer = Task.Run(async () =>
                 {
-                    try
+                    while (!fifo.IsCompleted)
                     {
-                        while (!fifo.IsCompleted)
+                        var copyTask = default(CopyTask);
+
+                        try
                         {
-                            var copyTask = default(CopyTask);
-
-                            try
-                            {
-                                Console.WriteLine("Remove.");
-                                copyTask = fifo.Take();
-                            }
-                            catch (InvalidOperationException)
-                            {
-                                //
-                            }
-
-                            var currentSourceBuffer = (await copyTask.SourceBufferTask)
-                                .Slice(copyTask.SourceOffset, copyTask.Length);
-
-                            var currentTargetBuffer = (await copyTask.TargetBufferTask)
-                                .Slice(copyTask.TargetOffset, copyTask.Length);
-
-                            currentSourceBuffer.CopyTo(currentTargetBuffer);
+                            copyTask = fifo.Take();
                         }
-                    }
-                    catch (Exception ex)
-                    {
+                        catch (InvalidOperationException)
+                        {
+                            //
+                        }
 
-                        throw;
+                        var currentSourceBuffer = (await copyTask.SourceBufferTask)
+                            .Slice(copyTask.SourceOffset, copyTask.Length);
+
+                        var currentTargetBuffer = (await copyTask.TargetBufferTask)
+                            .Slice(copyTask.TargetOffset, copyTask.Length);
+
+                        currentSourceBuffer.CopyTo(currentTargetBuffer);
                     }
                 });
 
