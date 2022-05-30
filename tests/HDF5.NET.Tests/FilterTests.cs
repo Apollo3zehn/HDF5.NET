@@ -10,6 +10,8 @@ using System.Runtime.Intrinsics.X86;
 using Xunit;
 using Xunit.Abstractions;
 
+#warning Add test with additional filter (shuffle) to detect wrongly returned filter sizes
+
 namespace HDF5.NET.Tests.Reading
 {
     public class FilterTests
@@ -19,6 +21,53 @@ namespace HDF5.NET.Tests.Reading
         public FilterTests(ITestOutputHelper logger)
         {
             _logger = logger;
+        }
+
+        [Theory]
+
+        [InlineData("minbits_0", (byte)24, 24, 24, 24, 24, 24)]
+        [InlineData("minbits_full", (byte)1, 0, 255, 1, 0, 255)]
+
+        [InlineData("uint8_nofill", (byte)0, 24, 5, 12, 13, 0)]
+        [InlineData("uint16_nofill", (ushort)0, 6144, 1280, 3072, 3328, 0)]
+        [InlineData("uint32_nofill", (uint)0, 402653184, 83886080, 201326592, 218103808, 0)]
+        [InlineData("uint64_nofill", (ulong)0, 1729382256910270464, 360287970189639680, 864691128455135232, 936748722493063168, 0)]
+
+        [InlineData("uint8_fill", (byte)127, 24, 5, 12, 13, 127)]
+        [InlineData("uint16_fill", (ushort)32767, 6144, 1280, 3072, 3328, 32767)]
+        [InlineData("uint32_fill", (uint)2147483647, 402653184, 83886080, 201326592, 218103808, 2147483647)]
+        [InlineData("uint64_fill", (ulong)9223372036854775808, 1729382256910270464, 360287970189639680, 864691128455135232, 936748722493063168, 9223372036854775808)]
+
+        [InlineData("int8_nofill", (sbyte)0, 24, -5, 12, 13, 0)]
+        [InlineData("int16_nofill", (short)0, 6144, -1280, 3072, 3328, 0)]
+        [InlineData("int32_nofill", (int)0, 402653184, -83886080, 201326592, 218103808, 0)]
+        [InlineData("int64_nofill", (long)0, 1729382256910270464, -360287970189639680, 864691128455135232, 936748722493063168, 0)]
+
+        [InlineData("int8_fill", (sbyte)63, 24, -5, 12, 13, 63)]
+        [InlineData("int16_fill", (short)16383, 6144, -1280, 3072, 3328, 16383)]
+        [InlineData("int32_fill", (int)1073741823, 402653184, -83886080, 201326592, 218103808, 1073741823)]
+        [InlineData("int64_fill", (long)4611686018427387904, 1729382256910270464, -360287970189639680, 864691128455135232, 936748722493063168, 4611686018427387904)]
+
+        [InlineData("float32_nofill", (float)0, 24.7, -5.3, 12.2, 13.2, 0)]
+        [InlineData("float64_nofill", (double)0, 24.7, -5.3, 12.2, 13.2, 0)]
+
+        [InlineData("float32_fill", (float)99.9, 24.7, -5.3, 12.2, 13.2, 99.9)]
+        [InlineData("float64_fill", (double)99.9, 24.7, -5.3, 12.2, 13.2, 99.9)]
+        public void CanDefilterScaleOffset<T>(string datasetName, T e1, T e2, T e3, T e4, T e5, T e6)
+            where T : unmanaged
+        {
+            // Arrange
+            var expected = new T[] { e1, e2, e3, e4, e5, e6 };
+            var filePath = "./testfiles/scaleoffset.h5";
+
+            // Act
+            using var root = H5File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
+            var dataset = root.Dataset(datasetName);
+
+            var actual = dataset.Read<T>();
+
+            // Assert
+            Assert.True(actual.SequenceEqual(expected));
         }
 
         [Theory]
@@ -121,12 +170,30 @@ namespace HDF5.NET.Tests.Reading
             Assert.True(actual.SequenceEqual(TestData.MediumData));
         }
 
-        [Fact]
-        public void CanDefilterZLib()
+        [Theory]
+        [InlineData("MicrosoftDeflateStream")]
+        [InlineData("SharpZipLibInflater")]
+#if NET5_0_OR_GREATER
+        // https://iobservable.net/blog/2013/08/06/clr-limitations/
+        // "It seems that the maximum array base element size is limited to 64KB."
+        [InlineData("Intel_ISA_L_Inflate")]
+#endif
+        public void CanDefilterZLib(string filterFuncId)
         {
             // Arrange
             var version = H5F.libver_t.LATEST;
             var filePath = TestUtils.PrepareTestFile(version, fileId => TestUtils.AddFilteredDataset_ZLib(fileId));
+
+            FilterFunc func = filterFuncId switch
+            {
+                "MicrosoftDeflateStream" => null, /* default */
+                "SharpZipLibInflater" => DeflateHelper_SharpZipLib.FilterFunc,
+                "Intel_ISA_L_Inflate" => DeflateHelper_Intel_ISA_L.FilterFunc,
+                _ => throw new NotSupportedException($"The filter func ID {filterFuncId} is not supported.")
+            };
+
+            if (func is not null)
+                H5Filter.Register(H5FilterID.Deflate, "deflate", func);
 
             // Act
             using var root = H5File.OpenReadCore(filePath, deleteOnClose: true);
