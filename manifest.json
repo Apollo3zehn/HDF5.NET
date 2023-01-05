@@ -1,403 +1,2405 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Git/GitHub/HDF5.NET/doc",
-  "xrefmap": "xrefmap.yml",
+  "source_base_path": "/home/vincent/Dokumente/Git/GitHub/HDF5.NET/doc",
+  "xrefmap": [
+    "xrefmap.yml",
+    ".NET Standard 2.0.xrefmap.yml",
+    ".NET Standard 2.1.xrefmap.yml",
+    ".NET 5.xrefmap.yml",
+    ".NET 6.xrefmap.yml"
+  ],
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.ArrayExtensions.yml",
+      "source_relative_path": "api/net50/HDF5.NET.ArrayExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.ArrayExtensions.html",
-          "hash": "8TZkB4K01Gh/tt2yJd89TA=="
+          "relative_path": "api/net50/HDF5.NET.ArrayExtensions.html",
+          "hash": "o0UqOy4xBnauyii2d4+dfioR3RVA+5yjrN8lnj77mVU="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.EndiannessConverterGeneric.yml",
+      "source_relative_path": "api/net50/HDF5.NET.DelegateSelection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.EndiannessConverterGeneric.html",
-          "hash": "qSQ90VqjN4WsBnehulM0AQ=="
+          "relative_path": "api/net50/HDF5.NET.DelegateSelection.html",
+          "hash": "cRBdSvKyZ/vatN5vPlxu/lpxTQBRQCjSQg3MwzjUnu4="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.FilterFunc.yml",
+      "source_relative_path": "api/net50/HDF5.NET.EndiannessConverterGeneric.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.FilterFunc.html",
-          "hash": "frIIyk2lWcxSewl9DHLDrw=="
+          "relative_path": "api/net50/HDF5.NET.EndiannessConverterGeneric.html",
+          "hash": "pM4/OzaCwTLV89yPYPIwvYlr4Vgg4qIa4v8p9cPxj6E="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5AttributableObject.yml",
+      "source_relative_path": "api/net50/HDF5.NET.FilterFunc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5AttributableObject.html",
-          "hash": "jpWJ767EZsfQ4pHqXgsg6A=="
+          "relative_path": "api/net50/HDF5.NET.FilterFunc.html",
+          "hash": "30ubcNLMZMzUcm/842+M+RveYmp1sc9reaGtsUaxi8Y="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Attribute.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5AttributableObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Attribute.html",
-          "hash": "rbXPK2nq+HWhLSNAsMLSeA=="
+          "relative_path": "api/net50/HDF5.NET.H5AttributableObject.html",
+          "hash": "5bqsBanBITUKAj1IxynevB3jx1tkwwmQpW3eOplvK2g="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5CommitedDatatype.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5Attribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5CommitedDatatype.html",
-          "hash": "iLSq/5BeW0ECDyPuf9OlEg=="
+          "relative_path": "api/net50/HDF5.NET.H5Attribute.html",
+          "hash": "Xng7HjKUpXYgp4s8X5IQtMmfSgy35KgqVt47Fa3aUs0="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Constants.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5CommitedDatatype.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Constants.html",
-          "hash": "b5mlFR+J+yM1qQyW7ldkKg=="
+          "relative_path": "api/net50/HDF5.NET.H5CommitedDatatype.html",
+          "hash": "J+iZt2IQgTL2JCO3mgizZmdDvWi3RRhPfZyo07jY08c="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5DataLayout.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5Constants.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5DataLayout.html",
-          "hash": "CUPqeYP3jBO2MNzIXWtL+A=="
+          "relative_path": "api/net50/HDF5.NET.H5Constants.html",
+          "hash": "koNQVkk+W6JQIOlbH5WOgpCIfseTFTMgU03YvMPky5Q="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5DataLayoutClass.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5DataLayoutClass.html",
-          "hash": "YwF1eRicVr3bQuTWNzcchQ=="
+          "relative_path": "api/net50/HDF5.NET.H5DataLayout.html",
+          "hash": "ZesH/8OZRYmz7+EDSgkV0Y5ab0Rdlcj2Run4CI/A1Po="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5DataType.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataLayoutClass.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5DataType.html",
-          "hash": "/9GnW5zKV3sFmDxq6BYi+w=="
+          "relative_path": "api/net50/HDF5.NET.H5DataLayoutClass.html",
+          "hash": "StKZEGVqiOoweypx73OC8llkAAjWWnsnJo0aHF7uFrQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5DataTypeClass.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.ArrayType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5DataTypeClass.html",
-          "hash": "yUdWPEE9KWRRwT5MIG4aWQ=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.ArrayType.html",
+          "hash": "tjPDFe3YkLd7VvoQ+esgAyqxhyEe8+4LxJr3sFn6Il8="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Dataset.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.BitFieldType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Dataset.html",
-          "hash": "rMzVIHHVbAi8XO6SxqqgVw=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.BitFieldType.html",
+          "hash": "a9VtHEPM0QnmYsUF/2LBXK/iE/EOp6i3SJE7PeCUaHI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5DatasetAccess.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.CompoundType.CompoundMember.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5DatasetAccess.html",
-          "hash": "/6MTWPS88FMXzIkTXpJd6g=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.CompoundType.CompoundMember.html",
+          "hash": "Od6ePjmtTFuiQCRaAAWvJphk0xn4X9bvdh3xbkU26MM="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Dataspace.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.CompoundType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Dataspace.html",
-          "hash": "qROGfYA5FO2ziWb04BP0fQ=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.CompoundType.html",
+          "hash": "Lk9BYGz7lf78LicE3R4c483hElCl3vJ5EadxjkldZA0="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5DataspaceType.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.EnumerationType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5DataspaceType.html",
-          "hash": "Xh4KMc45wWrzZFn9z42Pow=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.EnumerationType.html",
+          "hash": "OpyyPJ0+bDz2LKtIyqtCnG6c87Y9KflqbtwLd7x+Ut4="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5File.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.FixedPointType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5File.html",
-          "hash": "Q4A+hTsnAFxmxHUYOv09yA=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.FixedPointType.html",
+          "hash": "+C7CTo5hKhSCzzIz5/feHzebId9d5UtQAmfK6KnILCA="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5FillValue.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.FloatingPointType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5FillValue.html",
-          "hash": "uEtNF4rjvMRSRSAxaFmyXw=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.FloatingPointType.html",
+          "hash": "DSbWk4tXckSUz46j4xKYv/WTbWyKj08D3eGpusSGmZc="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Filter.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.OpaqueType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Filter.html",
-          "hash": "uy/qJpt1dXe2dkq8+rAYgg=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.OpaqueType.html",
+          "hash": "/EM26HNjmVkxOvzdTht4IlpKKgqx6sVv9C/Lshbqlv0="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5FilterFlags.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.ReferenceType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5FilterFlags.html",
-          "hash": "ISp+Ssb2IXPa+g31qDMQwA=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.ReferenceType.html",
+          "hash": "q+B7VeFHDablXxi23ywJFiDlw+VwINZE9WUtoZFalo0="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5FilterID.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.StringType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5FilterID.html",
-          "hash": "wlMq6QHR+r8eW36Adr6msA=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.StringType.html",
+          "hash": "ADdmqeML5jX6V6SS30w8TedtzSHzt7U0Ih9X6Ya3Mqw="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Group.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.VariableLengthType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Group.html",
-          "hash": "cnoWTr78zRfLaM/om98Q6g=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.VariableLengthType.html",
+          "hash": "wSJeAV5R9nBXE4zSLHnmftta75HFlB5P5ugh5gOkLNo="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5LinkAccess.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5LinkAccess.html",
-          "hash": "p/Hc08JweEDDtpHNmdSeww=="
+          "relative_path": "api/net50/HDF5.NET.H5DataType.html",
+          "hash": "rmBch9aPoAWFaUOTX6xyAAEcm8kPStwhPlMSxx+AKDI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5NameAttribute.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataTypeClass.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5NameAttribute.html",
-          "hash": "Ev0Xz3fUOnFYhCebbMnqJw=="
+          "relative_path": "api/net50/HDF5.NET.H5DataTypeClass.html",
+          "hash": "0POmmA9z0selNyndMmcPWzAd3Dxg7jnyPP1dsfe3sFU="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5Object.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5Dataset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5Object.html",
-          "hash": "9TxQ/eDpXlzG4pWwChRAlg=="
+          "relative_path": "api/net50/HDF5.NET.H5Dataset.html",
+          "hash": "lxHIeY3ryMaHkE5A73DQnrIdwl4AJZS9Auk9fnjxeGs="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5ObjectReference.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DatasetAccess.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5ObjectReference.html",
-          "hash": "5xv6LWqILTKHiHchVuJ6+g=="
+          "relative_path": "api/net50/HDF5.NET.H5DatasetAccess.html",
+          "hash": "VDPb2VINUihT6B/pprls7s35X0crWF2o8Efw+j0OofY="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5RegionReference.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5Dataspace.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5RegionReference.html",
-          "hash": "9eY3VWB8/6V0fTwcOgUw2w=="
+          "relative_path": "api/net50/HDF5.NET.H5Dataspace.html",
+          "hash": "DycILO3tce1IjsEVSUoJPcKvqHvGOnIxgxObKYJJR9o="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.H5UnresolvedLink.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5DataspaceType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.H5UnresolvedLink.html",
-          "hash": "QsLpqqiV9xW2U1Gc59p2Eg=="
+          "relative_path": "api/net50/HDF5.NET.H5DataspaceType.html",
+          "hash": "YUa+QEprVOCxHOPCSxNLhyhXHna8foP/tI2RqAERsr4="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.HyperslabSelection.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5File.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.HyperslabSelection.html",
-          "hash": "iSGU+9KhZM79fVUIyjzqGQ=="
+          "relative_path": "api/net50/HDF5.NET.H5File.html",
+          "hash": "3wrG2gCeq+MjPQvXSdm3RmkBFI/m39dYA4IOlV7+jBM="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.IChunkCache.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5FillValue.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.IChunkCache.html",
-          "hash": "WeMPfFs5DQPMw/cTf5NVtw=="
+          "relative_path": "api/net50/HDF5.NET.H5FillValue.html",
+          "hash": "pyOlF9d7CKKzGEo3kikChDzVfx9Ac2LLPgQ+A8nAbiw="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.Selection.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5Filter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.Selection.html",
-          "hash": "uiSF6yYZ0x9zLt29k+JqEw=="
+          "relative_path": "api/net50/HDF5.NET.H5Filter.html",
+          "hash": "XcrUKXc8sWUoWRa32GDRYHSSom6a5H3d5QUq4d0oYyE="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.SimpleChunkCache.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5FilterFlags.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.SimpleChunkCache.html",
-          "hash": "56QiuouUMMIrh6YL10sqdQ=="
+          "relative_path": "api/net50/HDF5.NET.H5FilterFlags.html",
+          "hash": "Mm8xS69xl9UfJ6GZGHti0rV6u7JqSbGmlcJvBBrhbjo="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HDF5.NET.yml",
+      "source_relative_path": "api/net50/HDF5.NET.H5FilterID.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HDF5.NET.html",
-          "hash": "2AXkoUMmHktJ/l79rjvMRA=="
+          "relative_path": "api/net50/HDF5.NET.H5FilterID.html",
+          "hash": "LpfsBow/KZkzYHInCpy9XXtC73kaW1qhRNxf1rZLCDQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5Group.html",
+          "hash": "0S+Qh7WrvEYdQRNyLsBwUV6fMgtNxFPaYouVLDfw3CQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5LinkAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5LinkAccess.html",
+          "hash": "lqwEZbLWYz+ipnIT+oRIutxufKerAN1quh9gGnmWhB4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5NameAttribute.html",
+          "hash": "78Ehv1ZmudLuZ6qucKw96xua2UBKcX74TJRCV47/oiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5Object.html",
+          "hash": "ZowF3bSDrtMVb4IQwPGRYFCAeaOy0y0a9yScC87qLsY="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5ObjectReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5ObjectReference.html",
+          "hash": "Afl4hS/0qzfpC9SIKqlem2YdHfCvjiThjC8VU33QtQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5RegionReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5RegionReference.html",
+          "hash": "SsF5qONeQ3/M8QpB3CVYCbpGSJlY5dSw3LiLM4HnbjA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.H5UnresolvedLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.H5UnresolvedLink.html",
+          "hash": "W3G8Vb3HtvkllVbPQ5ZfbBxN9cxDinJ54Xk297AGqVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.HyperslabSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.HyperslabSelection.html",
+          "hash": "N1MeyF4ECeasqOrR+mbQoUfJ5+Vx87d+bbNcFpbvcKc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.IChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.IChunkCache.html",
+          "hash": "1zd6jYnzzQkIYPEku74AxqzYZCEsWUM8DsVcCALjUYA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.Selection.html",
+          "hash": "uVTHPFAinGhX+SpUhrxDr2XEq2hUoRXJiR5uHseoKpM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.SimpleChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.SimpleChunkCache.html",
+          "hash": "xe0z8GueUiJE6GqCLMZFzQxCTRXuJW5Gc7jdKxAMP6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.Step.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.Step.html",
+          "hash": "xDs7EYJFTfsVwYRyYrBVs818RAhjvkR85+x3SDcdq30="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net50/HDF5.NET.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net50/HDF5.NET.html",
+          "hash": "sGC0VJsrQ5Vb0HLTTZMaOeMPav/Ggzx2wZY/zVS8EmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 5",
+      "group": ".NET 5"
     },
     {
       "type": "Toc",
-      "source_relative_path": "api/toc.yml",
+      "source_relative_path": "api/net50/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "NIytPsa8es9+418/c7bCCQ=="
+          "relative_path": "api/net50/toc.html",
+          "hash": "uOEDNAJ3FFlN/wpkBqi39jAdsBRb2Y+89ST3T9mWmls="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": ".NET 5",
+      "group": ".NET 5"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.ArrayExtensions.html",
+          "hash": "o0UqOy4xBnauyii2d4+dfioR3RVA+5yjrN8lnj77mVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.DelegateSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.DelegateSelection.html",
+          "hash": "cRBdSvKyZ/vatN5vPlxu/lpxTQBRQCjSQg3MwzjUnu4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.EndiannessConverterGeneric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.EndiannessConverterGeneric.html",
+          "hash": "pM4/OzaCwTLV89yPYPIwvYlr4Vgg4qIa4v8p9cPxj6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.FilterFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.FilterFunc.html",
+          "hash": "30ubcNLMZMzUcm/842+M+RveYmp1sc9reaGtsUaxi8Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5AttributableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5AttributableObject.html",
+          "hash": "QsxiYJ59R/CubzcU3poh/GGgqoGztsu5/tvQTQSrK4o="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Attribute.html",
+          "hash": "Xng7HjKUpXYgp4s8X5IQtMmfSgy35KgqVt47Fa3aUs0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5CommitedDatatype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5CommitedDatatype.html",
+          "hash": "J+iZt2IQgTL2JCO3mgizZmdDvWi3RRhPfZyo07jY08c="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Constants.html",
+          "hash": "koNQVkk+W6JQIOlbH5WOgpCIfseTFTMgU03YvMPky5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataLayout.html",
+          "hash": "ZesH/8OZRYmz7+EDSgkV0Y5ab0Rdlcj2Run4CI/A1Po="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataLayoutClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataLayoutClass.html",
+          "hash": "StKZEGVqiOoweypx73OC8llkAAjWWnsnJo0aHF7uFrQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.ArrayType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.ArrayType.html",
+          "hash": "tjPDFe3YkLd7VvoQ+esgAyqxhyEe8+4LxJr3sFn6Il8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.BitFieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.BitFieldType.html",
+          "hash": "a9VtHEPM0QnmYsUF/2LBXK/iE/EOp6i3SJE7PeCUaHI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.CompoundType.CompoundMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.CompoundType.CompoundMember.html",
+          "hash": "Od6ePjmtTFuiQCRaAAWvJphk0xn4X9bvdh3xbkU26MM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.CompoundType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.CompoundType.html",
+          "hash": "Lk9BYGz7lf78LicE3R4c483hElCl3vJ5EadxjkldZA0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.EnumerationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.EnumerationType.html",
+          "hash": "OpyyPJ0+bDz2LKtIyqtCnG6c87Y9KflqbtwLd7x+Ut4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.FixedPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.FixedPointType.html",
+          "hash": "+C7CTo5hKhSCzzIz5/feHzebId9d5UtQAmfK6KnILCA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.FloatingPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.FloatingPointType.html",
+          "hash": "DSbWk4tXckSUz46j4xKYv/WTbWyKj08D3eGpusSGmZc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.OpaqueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.OpaqueType.html",
+          "hash": "/EM26HNjmVkxOvzdTht4IlpKKgqx6sVv9C/Lshbqlv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.ReferenceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.ReferenceType.html",
+          "hash": "q+B7VeFHDablXxi23ywJFiDlw+VwINZE9WUtoZFalo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.StringType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.StringType.html",
+          "hash": "ADdmqeML5jX6V6SS30w8TedtzSHzt7U0Ih9X6Ya3Mqw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.VariableLengthType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.VariableLengthType.html",
+          "hash": "wSJeAV5R9nBXE4zSLHnmftta75HFlB5P5ugh5gOkLNo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataType.html",
+          "hash": "rmBch9aPoAWFaUOTX6xyAAEcm8kPStwhPlMSxx+AKDI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataTypeClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataTypeClass.html",
+          "hash": "0POmmA9z0selNyndMmcPWzAd3Dxg7jnyPP1dsfe3sFU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Dataset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Dataset.html",
+          "hash": "/dh15XXIBuvQBvs7qgQ+MVLTLna0H3F62k+AwaHoCLc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DatasetAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DatasetAccess.html",
+          "hash": "VDPb2VINUihT6B/pprls7s35X0crWF2o8Efw+j0OofY="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Dataspace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Dataspace.html",
+          "hash": "DycILO3tce1IjsEVSUoJPcKvqHvGOnIxgxObKYJJR9o="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5DataspaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5DataspaceType.html",
+          "hash": "YUa+QEprVOCxHOPCSxNLhyhXHna8foP/tI2RqAERsr4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5File.html",
+          "hash": "3wrG2gCeq+MjPQvXSdm3RmkBFI/m39dYA4IOlV7+jBM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5FillValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5FillValue.html",
+          "hash": "pyOlF9d7CKKzGEo3kikChDzVfx9Ac2LLPgQ+A8nAbiw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Filter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Filter.html",
+          "hash": "XcrUKXc8sWUoWRa32GDRYHSSom6a5H3d5QUq4d0oYyE="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5FilterFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5FilterFlags.html",
+          "hash": "Mm8xS69xl9UfJ6GZGHti0rV6u7JqSbGmlcJvBBrhbjo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5FilterID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5FilterID.html",
+          "hash": "LpfsBow/KZkzYHInCpy9XXtC73kaW1qhRNxf1rZLCDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Group.html",
+          "hash": "+7PJJQWbHVSk7ai1zVXtno3fgUySDwou1DjSP7Fz8OY="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5LinkAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5LinkAccess.html",
+          "hash": "lqwEZbLWYz+ipnIT+oRIutxufKerAN1quh9gGnmWhB4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5NameAttribute.html",
+          "hash": "78Ehv1ZmudLuZ6qucKw96xua2UBKcX74TJRCV47/oiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5Object.html",
+          "hash": "fJH3SlUV97rUURl3rWRpBeIkWdrKAdbOcxR9w+0/ttA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5ObjectReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5ObjectReference.html",
+          "hash": "Afl4hS/0qzfpC9SIKqlem2YdHfCvjiThjC8VU33QtQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5RegionReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5RegionReference.html",
+          "hash": "SsF5qONeQ3/M8QpB3CVYCbpGSJlY5dSw3LiLM4HnbjA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.H5UnresolvedLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.H5UnresolvedLink.html",
+          "hash": "W3G8Vb3HtvkllVbPQ5ZfbBxN9cxDinJ54Xk297AGqVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.HyperslabSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.HyperslabSelection.html",
+          "hash": "N1MeyF4ECeasqOrR+mbQoUfJ5+Vx87d+bbNcFpbvcKc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.IChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.IChunkCache.html",
+          "hash": "1zd6jYnzzQkIYPEku74AxqzYZCEsWUM8DsVcCALjUYA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.Selection.html",
+          "hash": "5Smtzh0CiRGFfIZW7iA95u3KWEF/thodca4xX+iBGqQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.SimpleChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.SimpleChunkCache.html",
+          "hash": "xe0z8GueUiJE6GqCLMZFzQxCTRXuJW5Gc7jdKxAMP6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.Step.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.Step.html",
+          "hash": "xDs7EYJFTfsVwYRyYrBVs818RAhjvkR85+x3SDcdq30="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/net60/HDF5.NET.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/HDF5.NET.html",
+          "hash": "sGC0VJsrQ5Vb0HLTTZMaOeMPav/Ggzx2wZY/zVS8EmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/net60/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/net60/toc.html",
+          "hash": "uOEDNAJ3FFlN/wpkBqi39jAdsBRb2Y+89ST3T9mWmls="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET 6",
+      "group": ".NET 6"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.ArrayExtensions.html",
+          "hash": "Y2NWqVMnz4gO0gd303h8HFBb71++CDgq8biX4PrTt8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.DelegateSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.DelegateSelection.html",
+          "hash": "ExMpNB18s8kB1HAW1NVy19mO6i9F/DeLdPjwfYgvEkQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.EndiannessConverterGeneric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.EndiannessConverterGeneric.html",
+          "hash": "f1NZUFBreNwj6gAwmtz5HdB+hAoUoLAQViou3NjP9Wo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.FilterFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.FilterFunc.html",
+          "hash": "lxHBaH2YI5d7Ewq14EYOC4c7pdWw0KDkipXheb8Jc4Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5AttributableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5AttributableObject.html",
+          "hash": "byU0JjSEWzMoXU3hhQvbdwO9uYlUSrbWwGF8fvH6x8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Attribute.html",
+          "hash": "mgea9hEHqcmr3NdabaeaNx2QqPA2zQy66wtKHguL6EI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5CommitedDatatype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5CommitedDatatype.html",
+          "hash": "J+iZt2IQgTL2JCO3mgizZmdDvWi3RRhPfZyo07jY08c="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Constants.html",
+          "hash": "rpHfiSFvzcxfclO2w06eI6d/B1hJU25CKvlN6WBceh8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataLayout.html",
+          "hash": "ow0VyJ7CQyhFQt50zZjrPfAq5wLuU2H68fBWllbQMV8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataLayoutClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataLayoutClass.html",
+          "hash": "StKZEGVqiOoweypx73OC8llkAAjWWnsnJo0aHF7uFrQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.ArrayType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.ArrayType.html",
+          "hash": "RB6ScjfRs10lSO13/1PtcYj5XN4d280GIs/unL+ObSc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.BitFieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.BitFieldType.html",
+          "hash": "/7NTD9HDMzs7mL6Ye2vVM53nWoJZpFdjTQbYOKK/jew="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.CompoundType.CompoundMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.CompoundType.CompoundMember.html",
+          "hash": "bp4VjvnA7ov0sbSs8dxe56nyP0EGwsQFHKWOQWlKGHc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.CompoundType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.CompoundType.html",
+          "hash": "ntg15MhmvZ1OG993zskLGx46YmGkAAe7qmXMEmkjQQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.EnumerationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.EnumerationType.html",
+          "hash": "yj7PXlMdPMT0p+14qjq+pFUylJftv1eRrTu77xvr+nY="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.FixedPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.FixedPointType.html",
+          "hash": "A9BgbJ/OZ6S9m7eAdKWr2n/iUd9FdlrssY9PkSBWNFU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.FloatingPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.FloatingPointType.html",
+          "hash": "/PGr/kA5ivSQY5DXOGQ4sW4iKfBkdItmqfO69f8XlNw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.OpaqueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.OpaqueType.html",
+          "hash": "5/03p14Uznicj8I8k5Ksvx0iZAxvtvyICwK+g0TS4Gw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.ReferenceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.ReferenceType.html",
+          "hash": "+hCJedrElIwuFg6MXyF0wm+zsq5slg6fgovbf2EWlKU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.StringType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.StringType.html",
+          "hash": "zXADl5L2w2m5evmOb126ZE6Sek8/A9c0HaACRXL3CEw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.VariableLengthType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.VariableLengthType.html",
+          "hash": "QjqlFl8qQJ/cK9WNR5pOWip+MEpSD8vOHLAX8g0cTbE="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataType.html",
+          "hash": "3HCanZ4iooOgwyll6r5EtB65syS8bof9zkjKXHBpmzA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataTypeClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataTypeClass.html",
+          "hash": "0POmmA9z0selNyndMmcPWzAd3Dxg7jnyPP1dsfe3sFU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Dataset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Dataset.html",
+          "hash": "LPNDtSx7bG37jqtzUsL6IXifzgl67TNwsXIQxu9xOd8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DatasetAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DatasetAccess.html",
+          "hash": "XVpPXOs2WimtJdONcqVj5k0V+wVpkN19qvnQdik8Nek="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Dataspace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Dataspace.html",
+          "hash": "XFW/mjZEDcMeR28K0twEM0OMfkLI6ePcWqjKYl30VJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5DataspaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5DataspaceType.html",
+          "hash": "YUa+QEprVOCxHOPCSxNLhyhXHna8foP/tI2RqAERsr4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5File.html",
+          "hash": "DRdqSoLvTDfkGmygO3JPPaR97UO/DEWscayyGxGjy/w="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5FillValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5FillValue.html",
+          "hash": "q5vlb4EEs+loUQ+Sq6hweFMN1S5s5R9TJ15BWw5naNA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Filter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Filter.html",
+          "hash": "CZh5sVEH2bYE7T4QDvZu47UK09MsBE70p6v302Yqpw8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5FilterFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5FilterFlags.html",
+          "hash": "Mm8xS69xl9UfJ6GZGHti0rV6u7JqSbGmlcJvBBrhbjo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5FilterID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5FilterID.html",
+          "hash": "LpfsBow/KZkzYHInCpy9XXtC73kaW1qhRNxf1rZLCDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Group.html",
+          "hash": "xoExLGnGDX5sD4mbfRf5S7NWVttGYG73JCHxpqmnCYw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5LinkAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5LinkAccess.html",
+          "hash": "IyuIf1RLMjAr3TIWh645zWmUzhLZtK9ZFMMV67FDzWg="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5NameAttribute.html",
+          "hash": "nsymgshQaAy8Fqdt32Us/NqkDfZ3kWsldwvTxxhzh9w="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5Object.html",
+          "hash": "SaL8OOE2Dm9nSZHca6wuLKZammhkj71umKXtomjEvW8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5ObjectReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5ObjectReference.html",
+          "hash": "HExuLpQFxEpepER5L770h5971+qfBH5HZCxlsyW0rvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5RegionReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5RegionReference.html",
+          "hash": "4Q5p+XPnoc5RVs6XxKWDkW8STR02apJCGL++dT4xR3E="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.H5UnresolvedLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.H5UnresolvedLink.html",
+          "hash": "hCoEqfeUKSKPgrtlg7r22Mg+Kdq8XEwdXQzkNScyCAo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.HyperslabSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.HyperslabSelection.html",
+          "hash": "3en/sC2PKYoMW7GAYU9DOqAPPAI1v0TvUPqmjGu3BQU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.IChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.IChunkCache.html",
+          "hash": "4ALzzHDO7/+CW93XLE9IORbI4/yBZbPBzWSSU97YS7Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.Selection.html",
+          "hash": "UI7qvR3oXumeAg6KAXQjBLtcFAQb7q+vCRJCbqDH9S0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.SimpleChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.SimpleChunkCache.html",
+          "hash": "j0ae3sZxvpBN2sA1ZjNCkE34GCM9OssL0CIeOBTdQ48="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.Step.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.Step.html",
+          "hash": "iEL9gBmL1YDlAcT5r8SNui2n67yiFQfGUJphpMkT+HQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.0/HDF5.NET.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/HDF5.NET.html",
+          "hash": "sGC0VJsrQ5Vb0HLTTZMaOeMPav/Ggzx2wZY/zVS8EmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/netstandard2.0/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.0/toc.html",
+          "hash": "uOEDNAJ3FFlN/wpkBqi39jAdsBRb2Y+89ST3T9mWmls="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.0",
+      "group": ".NET Standard 2.0"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.ArrayExtensions.html",
+          "hash": "o0UqOy4xBnauyii2d4+dfioR3RVA+5yjrN8lnj77mVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.DelegateSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.DelegateSelection.html",
+          "hash": "cRBdSvKyZ/vatN5vPlxu/lpxTQBRQCjSQg3MwzjUnu4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.EndiannessConverterGeneric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.EndiannessConverterGeneric.html",
+          "hash": "pM4/OzaCwTLV89yPYPIwvYlr4Vgg4qIa4v8p9cPxj6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.FilterFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.FilterFunc.html",
+          "hash": "30ubcNLMZMzUcm/842+M+RveYmp1sc9reaGtsUaxi8Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5AttributableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5AttributableObject.html",
+          "hash": "VHhSExS0zI0YOofvFO1og0YXLcGUiHuAoSQuZynvdLI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Attribute.html",
+          "hash": "Xng7HjKUpXYgp4s8X5IQtMmfSgy35KgqVt47Fa3aUs0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5CommitedDatatype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5CommitedDatatype.html",
+          "hash": "J+iZt2IQgTL2JCO3mgizZmdDvWi3RRhPfZyo07jY08c="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Constants.html",
+          "hash": "koNQVkk+W6JQIOlbH5WOgpCIfseTFTMgU03YvMPky5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataLayout.html",
+          "hash": "ZesH/8OZRYmz7+EDSgkV0Y5ab0Rdlcj2Run4CI/A1Po="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataLayoutClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataLayoutClass.html",
+          "hash": "StKZEGVqiOoweypx73OC8llkAAjWWnsnJo0aHF7uFrQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.ArrayType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.ArrayType.html",
+          "hash": "tjPDFe3YkLd7VvoQ+esgAyqxhyEe8+4LxJr3sFn6Il8="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.BitFieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.BitFieldType.html",
+          "hash": "a9VtHEPM0QnmYsUF/2LBXK/iE/EOp6i3SJE7PeCUaHI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.CompoundType.CompoundMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.CompoundType.CompoundMember.html",
+          "hash": "Od6ePjmtTFuiQCRaAAWvJphk0xn4X9bvdh3xbkU26MM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.CompoundType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.CompoundType.html",
+          "hash": "Lk9BYGz7lf78LicE3R4c483hElCl3vJ5EadxjkldZA0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.EnumerationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.EnumerationType.html",
+          "hash": "OpyyPJ0+bDz2LKtIyqtCnG6c87Y9KflqbtwLd7x+Ut4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.FixedPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.FixedPointType.html",
+          "hash": "+C7CTo5hKhSCzzIz5/feHzebId9d5UtQAmfK6KnILCA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.FloatingPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.FloatingPointType.html",
+          "hash": "DSbWk4tXckSUz46j4xKYv/WTbWyKj08D3eGpusSGmZc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.OpaqueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.OpaqueType.html",
+          "hash": "/EM26HNjmVkxOvzdTht4IlpKKgqx6sVv9C/Lshbqlv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.ReferenceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.ReferenceType.html",
+          "hash": "q+B7VeFHDablXxi23ywJFiDlw+VwINZE9WUtoZFalo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.StringType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.StringType.html",
+          "hash": "ADdmqeML5jX6V6SS30w8TedtzSHzt7U0Ih9X6Ya3Mqw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.VariableLengthType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.VariableLengthType.html",
+          "hash": "wSJeAV5R9nBXE4zSLHnmftta75HFlB5P5ugh5gOkLNo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataType.html",
+          "hash": "rmBch9aPoAWFaUOTX6xyAAEcm8kPStwhPlMSxx+AKDI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataTypeClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataTypeClass.html",
+          "hash": "0POmmA9z0selNyndMmcPWzAd3Dxg7jnyPP1dsfe3sFU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Dataset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Dataset.html",
+          "hash": "lxHIeY3ryMaHkE5A73DQnrIdwl4AJZS9Auk9fnjxeGs="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DatasetAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DatasetAccess.html",
+          "hash": "VDPb2VINUihT6B/pprls7s35X0crWF2o8Efw+j0OofY="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Dataspace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Dataspace.html",
+          "hash": "DycILO3tce1IjsEVSUoJPcKvqHvGOnIxgxObKYJJR9o="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5DataspaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5DataspaceType.html",
+          "hash": "YUa+QEprVOCxHOPCSxNLhyhXHna8foP/tI2RqAERsr4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5File.html",
+          "hash": "3wrG2gCeq+MjPQvXSdm3RmkBFI/m39dYA4IOlV7+jBM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5FillValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5FillValue.html",
+          "hash": "pyOlF9d7CKKzGEo3kikChDzVfx9Ac2LLPgQ+A8nAbiw="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Filter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Filter.html",
+          "hash": "XcrUKXc8sWUoWRa32GDRYHSSom6a5H3d5QUq4d0oYyE="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5FilterFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5FilterFlags.html",
+          "hash": "Mm8xS69xl9UfJ6GZGHti0rV6u7JqSbGmlcJvBBrhbjo="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5FilterID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5FilterID.html",
+          "hash": "LpfsBow/KZkzYHInCpy9XXtC73kaW1qhRNxf1rZLCDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Group.html",
+          "hash": "HBHkd/KyynoShOhoKX0M1RxlK79CSP1Ypg2RRRo4ZjI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5LinkAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5LinkAccess.html",
+          "hash": "lqwEZbLWYz+ipnIT+oRIutxufKerAN1quh9gGnmWhB4="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5NameAttribute.html",
+          "hash": "78Ehv1ZmudLuZ6qucKw96xua2UBKcX74TJRCV47/oiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5Object.html",
+          "hash": "PmLyah1y+avpE/6dnxsGog/ntAafs2i+eecgTeWy48o="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5ObjectReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5ObjectReference.html",
+          "hash": "Afl4hS/0qzfpC9SIKqlem2YdHfCvjiThjC8VU33QtQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5RegionReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5RegionReference.html",
+          "hash": "SsF5qONeQ3/M8QpB3CVYCbpGSJlY5dSw3LiLM4HnbjA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.H5UnresolvedLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.H5UnresolvedLink.html",
+          "hash": "W3G8Vb3HtvkllVbPQ5ZfbBxN9cxDinJ54Xk297AGqVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.HyperslabSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.HyperslabSelection.html",
+          "hash": "N1MeyF4ECeasqOrR+mbQoUfJ5+Vx87d+bbNcFpbvcKc="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.IChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.IChunkCache.html",
+          "hash": "1zd6jYnzzQkIYPEku74AxqzYZCEsWUM8DsVcCALjUYA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.Selection.html",
+          "hash": "OmTtuxe9uneZ9O5yj4HYVdJYmH53Vx5ymzAeZgg7zGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.SimpleChunkCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.SimpleChunkCache.html",
+          "hash": "xe0z8GueUiJE6GqCLMZFzQxCTRXuJW5Gc7jdKxAMP6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.Step.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.Step.html",
+          "hash": "xDs7EYJFTfsVwYRyYrBVs818RAhjvkR85+x3SDcdq30="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/netstandard2.1/HDF5.NET.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/HDF5.NET.html",
+          "hash": "sGC0VJsrQ5Vb0HLTTZMaOeMPav/Ggzx2wZY/zVS8EmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/netstandard2.1/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/netstandard2.1/toc.html",
+          "hash": "uOEDNAJ3FFlN/wpkBqi39jAdsBRb2Y+89ST3T9mWmls="
+        }
+      },
+      "is_incremental": false,
+      "version": ".NET Standard 2.1",
+      "group": ".NET Standard 2.1"
     },
     {
       "type": "Resource",
@@ -438,19 +2440,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "JN4PvcHoLnWqrF5cY1aKMg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "toc.html",
-          "hash": "ByGO54enQKD6XVxFOsvKTw=="
+          "hash": "J94IRCD0Ub8KNjv6sOgRvVVq1CSNnuKyN7yj/O0EAoE="
         }
       },
       "is_incremental": false,
@@ -474,17 +2464,104 @@
           "total_file_count": 1,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 32,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 45,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 45,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 45,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 45,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
@@ -507,10 +2584,31 @@
       "processors": {}
     }
   ],
-  "version_info": {},
+  "version_info": {
+    ".NET Standard 2.0": {},
+    ".NET Standard 2.1": {},
+    ".NET 5": {},
+    ".NET 6": {}
+  },
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
+    },
+    {
+      "name": ".NET Standard 2.0",
+      "xrefmap": ".NET Standard 2.0.xrefmap.yml"
+    },
+    {
+      "name": ".NET Standard 2.1",
+      "xrefmap": ".NET Standard 2.1.xrefmap.yml"
+    },
+    {
+      "name": ".NET 5",
+      "xrefmap": ".NET 5.xrefmap.yml"
+    },
+    {
+      "name": ".NET 6",
+      "xrefmap": ".NET 6.xrefmap.yml"
     }
   ]
 }
