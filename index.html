@@ -604,7 +604,52 @@ data2D = dataset
     .AsSpan2D(height: 20, width: 10);
 </code></pre>
 <p>No data are being copied and you can work with the array similar to a normal <code>Span&lt;T&gt;</code>, i.e. you may want to <a href="https://learn.microsoft.com/en-us/windows/communitytoolkit/high-performance/span2d">slice</a> through it.</p>
-<h1 id="8-comparison-table">8 Comparison Table</h1>
+<h1 id="8-asynchronous-data-access">8 Asynchronous Data Access</h1>
+<p>HDF5.NET supports reading data asynchronously to allow the CPU work on other tasks while waiting for the result.</p>
+<p><strong>Sample 1: Load data of two datasets</strong></p>
+<pre><code class="lang-cs">async Task LoadDataAsynchronously()
+{
+    var data1Task = dataset1.ReadAsync&lt;int&gt;();
+    var data2Task = dataset2.ReadAsync&lt;int&gt;();
+    await Task.WhenAll(data1Task, data2Task);
+}
+</code></pre>
+<p><strong>Sample 2: Load data of two datasets and process it</strong></p>
+<pre><code class="lang-cs">async Task LoadAndProcessDataAsynchronously()
+{
+    var processedData1Task = Task.Run(async () =&gt; 
+    {
+        var data1 = await dataset1.ReadAsync&lt;int&gt;();
+        ProcessData(data1);
+    });
+    var processedData2Task = Task.Run(async () =&gt; 
+    {
+        var data2 = await dataset2.ReadAsync&lt;int&gt;();
+        ProcessData(data2);
+    });
+    await Task.WhenAll(processedData1Task, processedData2Task);
+}
+</code></pre>
+<p><strong>Sample 3: Load data of a single dataset and process it</strong></p>
+<pre><code class="lang-cs">
+async Task LoadAndProcessDataAsynchronously()
+{
+    var processedData1Task = Task.Run(async () =&gt; 
+    {
+        var fileSelection1 = new HyperslabSelection(start: 0, block: 50);
+        var data1 = await dataset1.ReadAsync&lt;int&gt;(fileSelection1);
+        ProcessData(data1);
+    });
+    var processedData2Task = Task.Run(async () =&gt; 
+    {
+        var fileSelection2 = new HyperslabSelection(start: 50, block: 50);
+        var data2 = await dataset2.ReadAsync&lt;int&gt;(fileSelection2);
+        ProcessData(data2);
+    });
+    await Task.WhenAll(processedData1Task, processedData2Task);
+}
+</code></pre>
+<h1 id="9-comparison-table">9 Comparison Table</h1>
 <p>The following table considers only projects listed on Nuget.org.</p>
 <table>
 <thead>
@@ -861,7 +906,7 @@ data2D = dataset
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/async/doc/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/dev/doc/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
