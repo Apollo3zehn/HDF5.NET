@@ -73,7 +73,8 @@
 
   <h1 id="HDF5_NET_H5DatasetAccess" data-uid="HDF5.NET.H5DatasetAccess" class="text-break">Struct H5DatasetAccess
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A structure which controls how the dataset is accessed. Reference: <a href="https://docs.hdfgroup.org/hdf5/v1_10/group___d_a_p_l.html">hdfgroup.org</a></p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="HDF5.NET.html">HDF5.NET</a></h6>
   <h6><strong>Assembly</strong>: HDF5.NET.dll</h6>
@@ -88,15 +89,16 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_H5DatasetAccess_ChunkCacheFactory.md&amp;value=---%0Auid%3A%20HDF5.NET.H5DatasetAccess.ChunkCacheFactory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/H5Properties/H5DatasetAccess.cs/#L7">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/H5Properties/H5DatasetAccess.cs/#L16">View Source</a>
   </span>
   <a id="HDF5_NET_H5DatasetAccess_ChunkCacheFactory_" data-uid="HDF5.NET.H5DatasetAccess.ChunkCacheFactory*"></a>
   <h4 id="HDF5_NET_H5DatasetAccess_ChunkCacheFactory" data-uid="HDF5.NET.H5DatasetAccess.ChunkCacheFactory">ChunkCacheFactory</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the factory to create the chunk cache. If <span class="xref">null</span>, the factory of the <a class="xref" href="HDF5.NET.H5File.html#HDF5_NET_H5File_ChunkCacheFactory">ChunkCacheFactory</a> property is used.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Func&lt;IChunkCache&gt; ChunkCacheFactory { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;IChunkCache&gt;? ChunkCacheFactory { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -108,7 +110,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="HDF5.NET.IChunkCache.html">IChunkCache</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Func</span>&lt;<a class="xref" href="HDF5.NET.IChunkCache.html">IChunkCache</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -118,15 +120,16 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_H5DatasetAccess_ExternalFilePrefix.md&amp;value=---%0Auid%3A%20HDF5.NET.H5DatasetAccess.ExternalFilePrefix%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/H5Properties/H5DatasetAccess.cs/#L5">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/H5Properties/H5DatasetAccess.cs/#L11">View Source</a>
   </span>
   <a id="HDF5_NET_H5DatasetAccess_ExternalFilePrefix_" data-uid="HDF5.NET.H5DatasetAccess.ExternalFilePrefix*"></a>
   <h4 id="HDF5_NET_H5DatasetAccess_ExternalFilePrefix" data-uid="HDF5.NET.H5DatasetAccess.ExternalFilePrefix">ExternalFilePrefix</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the external dataset storage file prefix. Reference: <a href="https://docs.hdfgroup.org/hdf5/v1_10/group___d_a_p_l.html#gad487f84157fd0944cbe1cbd4dea4e1b8">hdfgroup.org</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ExternalFilePrefix { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? ExternalFilePrefix { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -154,7 +157,7 @@
                     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_H5DatasetAccess.md&amp;value=---%0Auid%3A%20HDF5.NET.H5DatasetAccess%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/H5Properties/H5DatasetAccess.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/H5Properties/H5DatasetAccess.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

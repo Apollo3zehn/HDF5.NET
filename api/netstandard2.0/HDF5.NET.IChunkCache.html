@@ -73,7 +73,8 @@
 
   <h1 id="HDF5_NET_IChunkCache" data-uid="HDF5.NET.IChunkCache" class="text-break">Interface IChunkCache
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Caches chunks during a read operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="HDF5.NET.html">HDF5.NET</a></h6>
   <h6><strong>Assembly</strong>: HDF5.NET.dll</h6>
@@ -88,11 +89,12 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_IChunkCache_GetChunkAsync_System_UInt64___Func_Task_Memory_System_Byte____.md&amp;value=---%0Auid%3A%20HDF5.NET.IChunkCache.GetChunkAsync(System.UInt64%5B%5D%2CFunc%7BTask%7BMemory%7BSystem.Byte%7D%7D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/IChunkCache.cs/#L5">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/IChunkCache.cs/#L14">View Source</a>
   </span>
   <a id="HDF5_NET_IChunkCache_GetChunkAsync_" data-uid="HDF5.NET.IChunkCache.GetChunkAsync*"></a>
   <h4 id="HDF5_NET_IChunkCache_GetChunkAsync_System_UInt64___Func_Task_Memory_System_Byte____" data-uid="HDF5.NET.IChunkCache.GetChunkAsync(System.UInt64[],Func{Task{Memory{System.Byte}}})">GetChunkAsync(UInt64[], Func&lt;Task&lt;Memory&lt;Byte&gt;&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to get the chunk at the given position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,12 +113,14 @@
       <tr>
         <td><span class="xref">System.UInt64</span>[]</td>
         <td><span class="parametername">indices</span></td>
-        <td></td>
+        <td><p>The chunk position.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&lt;<span class="xref">Memory</span>&lt;<span class="xref">System.Byte</span>&gt;&gt;&gt;</td>
         <td><span class="parametername">chunkLoader</span></td>
-        <td></td>
+        <td><p>The chunk load is used whenever the chunk is not already cached.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +135,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">Memory</span>&lt;<span class="xref">System.Byte</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>The chunk.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +151,7 @@
                     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_IChunkCache.md&amp;value=---%0Auid%3A%20HDF5.NET.IChunkCache%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/IChunkCache.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/IChunkCache.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

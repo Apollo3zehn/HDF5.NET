@@ -1149,6 +1149,22 @@ references:
   commentId: T:HDF5.NET.H5FillValue
   fullName: HDF5.NET.H5FillValue
   nameWithType: H5FillValue
+- uid: HDF5.NET.H5FillValue.GetValue*
+  name: GetValue
+  href: api/netstandard2.1/HDF5.NET.H5FillValue.html#HDF5_NET_H5FillValue_GetValue_
+  commentId: Overload:HDF5.NET.H5FillValue.GetValue
+  isSpec: "True"
+  fullName: HDF5.NET.H5FillValue.GetValue
+  nameWithType: H5FillValue.GetValue
+- uid: HDF5.NET.H5FillValue.GetValue``1
+  name: GetValue<T>()
+  href: api/netstandard2.1/HDF5.NET.H5FillValue.html#HDF5_NET_H5FillValue_GetValue__1
+  commentId: M:HDF5.NET.H5FillValue.GetValue``1
+  name.vb: GetValue(Of T)()
+  fullName: HDF5.NET.H5FillValue.GetValue<T>()
+  fullName.vb: HDF5.NET.H5FillValue.GetValue(Of T)()
+  nameWithType: H5FillValue.GetValue<T>()
+  nameWithType.vb: H5FillValue.GetValue(Of T)()
 - uid: HDF5.NET.H5FillValue.Value
   name: Value
   href: api/netstandard2.1/HDF5.NET.H5FillValue.html#HDF5_NET_H5FillValue_Value
@@ -1494,32 +1510,6 @@ references:
   isSpec: "True"
   fullName: HDF5.NET.HyperslabSelection.HyperslabSelection
   nameWithType: HyperslabSelection.HyperslabSelection
-- uid: HDF5.NET.HyperslabSelection.Blocks
-  name: Blocks
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Blocks
-  commentId: P:HDF5.NET.HyperslabSelection.Blocks
-  fullName: HDF5.NET.HyperslabSelection.Blocks
-  nameWithType: HyperslabSelection.Blocks
-- uid: HDF5.NET.HyperslabSelection.Blocks*
-  name: Blocks
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Blocks_
-  commentId: Overload:HDF5.NET.HyperslabSelection.Blocks
-  isSpec: "True"
-  fullName: HDF5.NET.HyperslabSelection.Blocks
-  nameWithType: HyperslabSelection.Blocks
-- uid: HDF5.NET.HyperslabSelection.Counts
-  name: Counts
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Counts
-  commentId: P:HDF5.NET.HyperslabSelection.Counts
-  fullName: HDF5.NET.HyperslabSelection.Counts
-  nameWithType: HyperslabSelection.Counts
-- uid: HDF5.NET.HyperslabSelection.Counts*
-  name: Counts
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Counts_
-  commentId: Overload:HDF5.NET.HyperslabSelection.Counts
-  isSpec: "True"
-  fullName: HDF5.NET.HyperslabSelection.Counts
-  nameWithType: HyperslabSelection.Counts
 - uid: HDF5.NET.HyperslabSelection.Rank
   name: Rank
   href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Rank
@@ -1533,32 +1523,6 @@ references:
   isSpec: "True"
   fullName: HDF5.NET.HyperslabSelection.Rank
   nameWithType: HyperslabSelection.Rank
-- uid: HDF5.NET.HyperslabSelection.Starts
-  name: Starts
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Starts
-  commentId: P:HDF5.NET.HyperslabSelection.Starts
-  fullName: HDF5.NET.HyperslabSelection.Starts
-  nameWithType: HyperslabSelection.Starts
-- uid: HDF5.NET.HyperslabSelection.Starts*
-  name: Starts
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Starts_
-  commentId: Overload:HDF5.NET.HyperslabSelection.Starts
-  isSpec: "True"
-  fullName: HDF5.NET.HyperslabSelection.Starts
-  nameWithType: HyperslabSelection.Starts
-- uid: HDF5.NET.HyperslabSelection.Strides
-  name: Strides
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Strides
-  commentId: P:HDF5.NET.HyperslabSelection.Strides
-  fullName: HDF5.NET.HyperslabSelection.Strides
-  nameWithType: HyperslabSelection.Strides
-- uid: HDF5.NET.HyperslabSelection.Strides*
-  name: Strides
-  href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_Strides_
-  commentId: Overload:HDF5.NET.HyperslabSelection.Strides
-  isSpec: "True"
-  fullName: HDF5.NET.HyperslabSelection.Strides
-  nameWithType: HyperslabSelection.Strides
 - uid: HDF5.NET.HyperslabSelection.TotalElementCount
   name: TotalElementCount
   href: api/netstandard2.1/HDF5.NET.HyperslabSelection.html#HDF5_NET_HyperslabSelection_TotalElementCount

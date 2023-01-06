@@ -73,7 +73,8 @@
 
   <h1 id="HDF5_NET_ArrayExtensions" data-uid="HDF5.NET.ArrayExtensions" class="text-break">Class ArrayExtensions
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Contains extensions to simplify the conversion of a 1-dimensional array to an up 6-simensional array.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -93,11 +94,12 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_ArrayExtensions_ToArray2D__1___0___System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20HDF5.NET.ArrayExtensions.ToArray2D%60%601(%60%600%5B%5D%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L5">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L16">View Source</a>
   </span>
   <a id="HDF5_NET_ArrayExtensions_ToArray2D_" data-uid="HDF5.NET.ArrayExtensions.ToArray2D*"></a>
   <h4 id="HDF5_NET_ArrayExtensions_ToArray2D__1___0___System_Int64_System_Int64_" data-uid="HDF5.NET.ArrayExtensions.ToArray2D``1(``0[],System.Int64,System.Int64)">ToArray2D&lt;T&gt;(T[], Int64, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the 1-dimensional input array into a 2-dimensional output array by coping the data. See also <a href="https://github.com/Apollo3zehn/HDF5.NET#722-high-performance-method-2d-only">HDF5.NET</a> for a copy-free version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -117,17 +119,20 @@
       <tr>
         <td>T[]</td>
         <td><span class="parametername">data</span></td>
-        <td></td>
+        <td><p>The array to convert.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim0</span></td>
-        <td></td>
+        <td><p>The size of dimension 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim1</span></td>
-        <td></td>
+        <td><p>The size of dimension 1.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -142,7 +147,8 @@
     <tbody>
       <tr>
         <td>T[,]</td>
-        <td></td>
+        <td><p>A 2-dimensional array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -157,7 +163,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The base type of the array to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -166,11 +173,12 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_ArrayExtensions_ToArray3D__1___0___System_Int64_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20HDF5.NET.ArrayExtensions.ToArray3D%60%601(%60%600%5B%5D%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L20">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L40">View Source</a>
   </span>
   <a id="HDF5_NET_ArrayExtensions_ToArray3D_" data-uid="HDF5.NET.ArrayExtensions.ToArray3D*"></a>
   <h4 id="HDF5_NET_ArrayExtensions_ToArray3D__1___0___System_Int64_System_Int64_System_Int64_" data-uid="HDF5.NET.ArrayExtensions.ToArray3D``1(``0[],System.Int64,System.Int64,System.Int64)">ToArray3D&lt;T&gt;(T[], Int64, Int64, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the 1-dimensional input array into a 3-dimensional output array by coping the data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -190,22 +198,26 @@
       <tr>
         <td>T[]</td>
         <td><span class="parametername">data</span></td>
-        <td></td>
+        <td><p>The array to convert.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim0</span></td>
-        <td></td>
+        <td><p>The size of dimension 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim1</span></td>
-        <td></td>
+        <td><p>The size of dimension 1.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim2</span></td>
-        <td></td>
+        <td><p>The size of dimension 2.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -220,7 +232,8 @@
     <tbody>
       <tr>
         <td>T[,,]</td>
-        <td></td>
+        <td><p>A 3-dimensional array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -235,7 +248,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The base type of the array to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -244,11 +258,12 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_ArrayExtensions_ToArray4D__1___0___System_Int64_System_Int64_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20HDF5.NET.ArrayExtensions.ToArray4D%60%601(%60%600%5B%5D%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L35">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L65">View Source</a>
   </span>
   <a id="HDF5_NET_ArrayExtensions_ToArray4D_" data-uid="HDF5.NET.ArrayExtensions.ToArray4D*"></a>
   <h4 id="HDF5_NET_ArrayExtensions_ToArray4D__1___0___System_Int64_System_Int64_System_Int64_System_Int64_" data-uid="HDF5.NET.ArrayExtensions.ToArray4D``1(``0[],System.Int64,System.Int64,System.Int64,System.Int64)">ToArray4D&lt;T&gt;(T[], Int64, Int64, Int64, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the 1-dimensional input array into a 4-dimensional output array by coping the data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -268,27 +283,32 @@
       <tr>
         <td>T[]</td>
         <td><span class="parametername">data</span></td>
-        <td></td>
+        <td><p>The array to convert.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim0</span></td>
-        <td></td>
+        <td><p>The size of dimension 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim1</span></td>
-        <td></td>
+        <td><p>The size of dimension 1.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim2</span></td>
-        <td></td>
+        <td><p>The size of dimension 2.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim3</span></td>
-        <td></td>
+        <td><p>The size of dimension 3.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -303,7 +323,8 @@
     <tbody>
       <tr>
         <td>T[,,,]</td>
-        <td></td>
+        <td><p>A 4-dimensional array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,7 +339,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The base type of the array to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -327,11 +349,12 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_ArrayExtensions_ToArray5D__1___0___System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20HDF5.NET.ArrayExtensions.ToArray5D%60%601(%60%600%5B%5D%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L50">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L91">View Source</a>
   </span>
   <a id="HDF5_NET_ArrayExtensions_ToArray5D_" data-uid="HDF5.NET.ArrayExtensions.ToArray5D*"></a>
   <h4 id="HDF5_NET_ArrayExtensions_ToArray5D__1___0___System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_" data-uid="HDF5.NET.ArrayExtensions.ToArray5D``1(``0[],System.Int64,System.Int64,System.Int64,System.Int64,System.Int64)">ToArray5D&lt;T&gt;(T[], Int64, Int64, Int64, Int64, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the 1-dimensional input array into a 5-dimensional output array by coping the data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,32 +374,38 @@
       <tr>
         <td>T[]</td>
         <td><span class="parametername">data</span></td>
-        <td></td>
+        <td><p>The array to convert.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim0</span></td>
-        <td></td>
+        <td><p>The size of dimension 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim1</span></td>
-        <td></td>
+        <td><p>The size of dimension 1.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim2</span></td>
-        <td></td>
+        <td><p>The size of dimension 2.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim3</span></td>
-        <td></td>
+        <td><p>The size of dimension 3.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim4</span></td>
-        <td></td>
+        <td><p>The size of dimension 4.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -391,7 +420,8 @@
     <tbody>
       <tr>
         <td>T[,,,,]</td>
-        <td></td>
+        <td><p>A 5-dimensional array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,7 +436,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The base type of the array to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -415,11 +446,12 @@
     <a href="https://github.com/Apollo3zehn/HDF5.NET/new/master/apiSpec/new?filename=HDF5_NET_ArrayExtensions_ToArray6D__1___0___System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20HDF5.NET.ArrayExtensions.ToArray6D%60%601(%60%600%5B%5D%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L65">View Source</a>
+    <a href="https://github.com/Apollo3zehn/HDF5.NET/blob/master/src/HDF5.NET/API/ArrayExtensions.cs/#L118">View Source</a>
   </span>
   <a id="HDF5_NET_ArrayExtensions_ToArray6D_" data-uid="HDF5.NET.ArrayExtensions.ToArray6D*"></a>
   <h4 id="HDF5_NET_ArrayExtensions_ToArray6D__1___0___System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_" data-uid="HDF5.NET.ArrayExtensions.ToArray6D``1(``0[],System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64)">ToArray6D&lt;T&gt;(T[], Int64, Int64, Int64, Int64, Int64, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the 1-dimensional input array into a 6-dimensional output array by coping the data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -439,37 +471,44 @@
       <tr>
         <td>T[]</td>
         <td><span class="parametername">data</span></td>
-        <td></td>
+        <td><p>The array to convert.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim0</span></td>
-        <td></td>
+        <td><p>The size of dimension 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim1</span></td>
-        <td></td>
+        <td><p>The size of dimension 1.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim2</span></td>
-        <td></td>
+        <td><p>The size of dimension 2.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim3</span></td>
-        <td></td>
+        <td><p>The size of dimension 3.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim4</span></td>
-        <td></td>
+        <td><p>The size of dimension 4.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">dim5</span></td>
-        <td></td>
+        <td><p>The size of dimension 5.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -484,7 +523,8 @@
     <tbody>
       <tr>
         <td>T[,,,,,]</td>
-        <td></td>
+        <td><p>A 6-dimensional array.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -499,7 +539,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The base type of the array to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
