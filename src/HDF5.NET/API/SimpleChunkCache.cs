@@ -8,7 +8,7 @@
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SimpleChunkCache"/> instance.
+        /// Initializes a new instance of the <see cref="SimpleChunkCache"/> class.
         /// </summary>
         /// <param name="chunkSlotCount">The number of chunks that can be hold in the cache at the same time.</param>
         /// <param name="byteCount">The maximum size of the chunk cache in bytes.</param>
@@ -33,7 +33,7 @@
         /// <summary>
         /// Gets the number of chunks that can be hold in the cache at the same time.
         /// </summary>
-        public int ChunkSlotCount { get; init; }
+        public int ChunkSlotCount { get; }
 
         /// <summary>
         /// Gets the number of chunk slots that have already been consumed.
@@ -43,7 +43,7 @@
         /// <summary>
         /// Gets the maximum size of the chunk cache in bytes.
         /// </summary>
-        public ulong ByteCount { get; init; }
+        public ulong ByteCount { get; }
 
         /// <summary>
         /// Gets the number of consumed bytes of the chunk cache.

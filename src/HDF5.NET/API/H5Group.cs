@@ -41,6 +41,18 @@
         }
 
         /// <summary>
+        /// Gets the object that is at the given <paramref name="path"/>.
+        /// </summary>
+        /// <typeparam name="T">The return type of the object.</typeparam>
+        /// <param name="path">The path of the object.</param>
+        /// <param name="linkAccess">The link access properties.</param>
+        /// <returns>The requested object.</returns>
+        public T Get<T>(string path, H5LinkAccess linkAccess = default) where T : H5Object
+        {
+            return (T)Get(path, linkAccess);
+        }
+
+        /// <summary>
         /// Gets the object that is at the given <paramref name="reference"/>.
         /// </summary>
         /// <param name="reference">The reference of the object.</param>
@@ -56,6 +68,19 @@
         }
 
         /// <summary>
+        /// Gets the object that is at the given <paramref name="reference"/>.
+        /// </summary>
+        /// <typeparam name="T">The return type of the object.</typeparam>
+        /// <param name="reference">The reference of the object.</param>
+        /// <param name="linkAccess">The link access properties.</param>
+        /// <returns>The requested object.</returns>
+        public T Get<T>(H5ObjectReference reference, H5LinkAccess linkAccess = default)
+            where T : H5Object
+        {
+            return (T)Get(reference, linkAccess);
+        }
+
+        /// <summary>
         /// Gets the group that is at the given <paramref name="path"/>.
         /// </summary>
         /// <param name="path">The path of the object.</param>
@@ -64,9 +89,8 @@
         public H5Group Group(string path, H5LinkAccess linkAccess = default)
         {
             var link = Get(path, linkAccess);
-            var group = link as H5Group;
 
-            if (group is null)
+            if (link is not H5Group group)
                 throw new Exception($"The requested link exists but cannot be casted to {nameof(H5Group)} because it is of type {link.GetType().Name}.");
 
             return group;
@@ -81,9 +105,8 @@
         public H5Dataset Dataset(string path, H5LinkAccess linkAccess = default)
         {
             var link = Get(path, linkAccess);
-            var castedLink = link as H5Dataset;
 
-            if (castedLink is null)
+            if (link is not H5Dataset castedLink)
                 throw new Exception($"The requested link exists but cannot be casted to {nameof(H5Dataset)} because it is of type {link.GetType().Name}.");
 
             return castedLink;
@@ -98,9 +121,8 @@
         public H5CommitedDatatype CommitedDatatype(string path, H5LinkAccess linkAccess = default)
         {
             var link = Get(path, linkAccess);
-            var castedLink = link as H5CommitedDatatype;
 
-            if (castedLink is null)
+            if (link is not H5CommitedDatatype castedLink)
                 throw new Exception($"The requested link exists but cannot be casted to {nameof(H5CommitedDatatype)} because it is of type {link.GetType().Name}.");
 
             return castedLink;

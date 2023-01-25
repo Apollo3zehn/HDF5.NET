@@ -1,9 +1,11 @@
-﻿namespace HDF5.NET
+﻿using System.IO.MemoryMappedFiles;
+
+namespace HDF5.NET
 {
     /// <summary>
     /// An HDF5 file object. This is the entry-point to work with HDF5 files.
     /// </summary>
-    public partial class H5File : H5Group, IDisposable
+    public sealed partial class H5File : H5Group, IDisposable
     {
         #region Properties
 
@@ -23,7 +25,7 @@
                     return _chunkCacheFactory;
 
                 else
-                    return H5File.DefaultChunkCacheFactory;
+                    return DefaultChunkCacheFactory;
             }
             set
             {
@@ -34,7 +36,7 @@
         /// <summary>
         /// The default chunk cache factory.
         /// </summary>
-        public static Func<IChunkCache> DefaultChunkCacheFactory = () => new SimpleChunkCache();
+        public static Func<IChunkCache> DefaultChunkCacheFactory { get; } = () => new SimpleChunkCache();
 
         #endregion
 
@@ -46,7 +48,7 @@
         /// <param name="filePath">The file to open.</param>
         public static H5File OpenRead(string filePath)
         {
-            return H5File.OpenReadCore(filePath);
+            return OpenReadCore(filePath);
         }
 
         /// <summary>
@@ -59,17 +61,39 @@
         /// <param name="useAsync">A boolean which indicates if the file be opened with the <see cref="FileOptions.Asynchronous"/> flag.</param>
         public static H5File Open(string filePath, FileMode mode, FileAccess fileAccess, FileShare fileShare, bool useAsync = false)
         {
-            return H5File.OpenCore(filePath, mode, fileAccess, fileShare, useAsync: useAsync);
+            return OpenCore(filePath, mode, fileAccess, fileShare, useAsync: useAsync);
         }
 
         /// <summary>
         /// Opens an HDF5 stream.
         /// </summary>
-        /// <param name="stream">The stream to open.</param>
+        /// <param name="stream">The stream to use.</param>
+        /// <param name="leaveOpen">A boolean which indicates if the stream should be kept open when this class is disposed. The default is <see langword="false"/>.</param>
         /// <returns></returns>
-        public static H5File Open(Stream stream)
+        public static H5File Open(Stream stream, bool leaveOpen = false)
         {
-            return H5File.OpenCore(stream, string.Empty);
+            H5BaseReader reader;
+
+#if NET6_0_OR_GREATER
+            if (stream is FileStream fileStream)
+                reader = new H5FileStreamReader(fileStream, leaveOpen: leaveOpen);
+
+            else
+#endif
+                reader = new H5StreamReader(stream, leaveOpen: leaveOpen);
+
+            return OpenCore(reader, string.Empty);
+        }
+
+        /// <summary>
+        /// Opens an HDF5 memory-mapped file.
+        /// </summary>
+        /// <param name="accessor">The memory-mapped accessor to use.</param>
+        /// <returns></returns>
+        public static H5File Open(MemoryMappedViewAccessor accessor)
+        {
+            var reader = new H5MemoryMappedFileReader(accessor);
+            return OpenCore(reader, string.Empty);
         }
 
         /// <inheritdoc />
@@ -88,7 +112,7 @@
                 {
                     //
                 }
-            }    
+            }
         }
 
         #endregion
