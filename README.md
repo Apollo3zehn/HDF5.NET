@@ -1,11 +1,4 @@
-**See https://github.com/Apollo3zehn/HDF5.NET/issues/9 for not yet implemented features.**
-
-| API Documentation |
-| ------------------ |
-| [.NET Standard 2.0](https://apollo3zehn.github.io/HDF5.NET/api/netstandard2.0/HDF5.NET.html) |
-| [.NET Standard 2.1](https://apollo3zehn.github.io/HDF5.NET/api/netstandard2.1/HDF5.NET.html) |
-| [.NET 5](https://apollo3zehn.github.io/HDF5.NET/api/net50/HDF5.NET.html) |
-| [.NET 6](https://apollo3zehn.github.io/HDF5.NET/api/net60/HDF5.NET.html) |
+> :warning: The project has been renamed and further development will continue in the [PureHDF](https://github.com/Apollo3zehn/PureHDF) repository.
 
 # HDF5.NET
 
